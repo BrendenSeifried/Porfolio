@@ -5,9 +5,11 @@
     color: rgba(228, 213, 213, 0.589);
     background-color: rgb(42, 53, 100);
     background-image: '../assets/water.jpg';
+    /* try to use z-index */
 }
 .testContainer{
     /* display:flex;
+    z-index
     justify-content: center;
     flex-direction: column;
     justify-items: center; */
