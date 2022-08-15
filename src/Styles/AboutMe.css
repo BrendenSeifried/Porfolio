@@ -1,0 +1,15 @@
+.test{
+    color: rgba(238, 229, 229, 0.849);
+    display:flex;
+    justify-content: center;
+    color: rgba(228, 213, 213, 0.589);
+    background-color: rgb(42, 53, 100);
+    background-image: '../assets/water.jpg';
+}
+.testContainer{
+    /* display:flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center; */
+  background-image: url('../assets/water.jpg');
+}

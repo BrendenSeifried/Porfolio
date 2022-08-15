@@ -1,5 +1,14 @@
 import React from 'react';
+import About from '../components/About';
+import { LandingBackground } from '../Styles/LandingStyle';
 
 export default function Landing() {
-  return <div>Landing</div>;
+  return (
+    <>
+      <LandingBackground>
+        <About />
+        test
+      </LandingBackground>
+    </>
+  );
 }
