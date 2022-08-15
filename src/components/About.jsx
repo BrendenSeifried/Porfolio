@@ -1,9 +1,11 @@
 import React from 'react';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function About() {
   return (
     <>
       <h1>Bio</h1>
+
       <h2>Welcome to by portfolio site.</h2>
       <p>
         Hey there, thank you for taking time to check out this website! My
@@ -27,20 +29,27 @@ export default function About() {
         contact me!{' '}
       </p>
       <p>Brenden Seifried </p>
-      <p onClick={() => (window.location = 'mailto:brendenseifried@gmail.com')}>
-        brendenseifried@gmail.com
+      <p>
+        <a href={'mailto:brendenseifried@gmail.com'}>
+          brendenseifried@gmail.com
+        </a>
       </p>
-      <p
-        onClick={() =>
-          (window.location = 'https://www.linkedin.com/in/brendenseifried/')
-        }
-      >
-        Linkedin
+      <p>
+        <a href={'https://www.linkedin.com/in/brendenseifried/'}>
+          Linkedin <FaExternalLinkAlt />{' '}
+        </a>
       </p>
-      <p
+      {/* <p
         onClick={() => (window.location = 'https://github.com/BrendenSeifried')}
-      >
-        GitHub
+      > */}
+      <p>
+        <a href={'https://github.com/BrendenSeifried'}>
+          GitHub <FaGithub />
+        </a>
+      </p>
+
+      <p>
+        <a href={'https://www.canva.com/design/DAE_sMgAI6I/view'}>My Resume</a>
       </p>
     </>
   );
