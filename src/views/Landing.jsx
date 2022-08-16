@@ -4,16 +4,19 @@ import FMM from '../components/FMM';
 import Forage from '../components/Forage';
 import LandingPage from '../components/LandingPage';
 import { LandingBackground } from '../Styles/Home';
+import { gridContainer } from '../Styles/Grid';
 
 export default function Landing() {
   return (
     <>
-      <LandingBackground>
-        <LandingPage />
-        <About />
-        <FMM />
-        <Forage />
-      </LandingBackground>
+      <gridContainer>
+        <LandingBackground>
+          <LandingPage />
+          <About />
+          <FMM />
+          <Forage />
+        </LandingBackground>
+      </gridContainer>
     </>
   );
 }

@@ -1,0 +1,39 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.titleText {
+    grid-area: 7 / 5 / 8 / 6;
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / 10;
+}
+
+.cardFour {
+    grid-area: 8 / 8 / 10 / 9;
+}
+
+.cardThree {
+    grid-area: 8 / 6 / 10 / 7;
+}
+
+.cardTwo {
+    grid-area: 8 / 4 / 10 / 5;
+}
+
+.cardOne{
+    grid-area: 8 / 2 / 10 / 3;
+}
+
+.shortDescription {
+    grid-area: 3 / 2 / 6 / 5;
+}
+
+.bio {
+    grid-area: 3 / 6 / 7 / 9;
+}

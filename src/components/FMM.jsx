@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa';
+import { CardContainer } from '../Styles/ProjectCards';
 
 export default function FMM() {
   return (
-    <div>
-      FMM
+    <CardContainer>
       <h2>Full-Metal-Messenger</h2>
       <h3>
         A real time messaging app. This App allows users to create private chat
@@ -21,6 +21,7 @@ export default function FMM() {
           <FaLink />
         </a>
       </p>
-    </div>
+      {/* <image src={}/> */}
+    </CardContainer>
   );
 }
