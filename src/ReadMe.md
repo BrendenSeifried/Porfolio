@@ -1,1 +1,1 @@
-![WireFrame](./assets/wireframe1.PNG)
+<!-- ![WireFrame](./assets/wireframe1.PNG) -->

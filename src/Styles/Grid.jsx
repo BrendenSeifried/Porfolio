@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const gridContainer = styled.div`
+export const GridContainer = styled.div`
    {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -10,49 +10,49 @@ export const gridContainer = styled.div`
   }
 `;
 
-export const titleText = styled.titleText`
+export const TitleText = styled.div`
    {
     grid-area: 7 / 5 / 8 / 6;
   }
 `;
 
-export const header = styled.header`
+export const Header = styled.div`
    {
     grid-area: 1 / 1 / 2 / 10;
   }
 `;
 
-export const cardFour = styled.cardFour`
+export const CardFour = styled.div`
    {
     grid-area: 8 / 8 / 10 / 9;
   }
 `;
 
-export const cardThree = styled.cardThree`
+export const CardThree = styled.div`
    {
     grid-area: 8 / 6 / 10 / 7;
   }
 `;
 
-export const cardTwo = styled.cardTwo`
+export const CardTwo = styled.div`
    {
     grid-area: 8 / 4 / 10 / 5;
   }
 `;
 
-export const cardOne = styled.cardOne`
+export const CardOne = styled.div`
    {
     grid-area: 8 / 2 / 10 / 3;
   }
 `;
 
-export const shortDescription = styled.shortDescription`
+export const shortDescription = styled.div`
    {
     grid-area: 3 / 2 / 6 / 5;
   }
 `;
 
-export const bio = styled.bio`
+export const bio = styled.div`
    {
     grid-area: 3 / 6 / 7 / 9;
   }
