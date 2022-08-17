@@ -68,6 +68,7 @@ export const Links = styled.div`
    {
     grid-area: 2 / 9 / 3 / 11;
     background-color: blue;
+    height: 50px;
   }
 `;
 
