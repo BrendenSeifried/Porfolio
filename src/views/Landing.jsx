@@ -19,6 +19,7 @@ import {
 } from '../Styles/GridTwo';
 import { LandingBackground } from '../Styles/Home';
 import { FaParking } from 'react-icons/fa';
+import { GiMagicShield } from 'react-icons/gi';
 
 export default function Landing() {
   const [expand, setExpand] = useState(true);
@@ -42,11 +43,6 @@ export default function Landing() {
         <Bio>
           <About />
         </Bio>
-        {/* <CardOne>
-          <Link to="/FMM">
-            <FMM />
-          </Link>
-        </CardOne> */}
 
         <CardOne onClick={() => setExpand(!expand)}>
           {expand ? (
@@ -63,9 +59,25 @@ export default function Landing() {
           )}
         </CardOne>
 
-        <CardTwo>
+        {/* <CardTwo>
           <Forage />
+        </CardTwo> */}
+
+        <CardTwo onClick={() => setExpand(!expand)}>
+          {expand ? (
+            <CollapsedCards>
+              <h1>Forage Parking App</h1>
+              {''}
+              <h2>
+                <GiMagicShield size={200} />
+              </h2>
+              <h3>React | SupaBase | MapBox | Netlify | 4-Person Team</h3>
+            </CollapsedCards>
+          ) : (
+            <Forage />
+          )}
         </CardTwo>
+
         <CardThree></CardThree>
         <CardFour></CardFour>
         {/* </LandingBackground> */}
