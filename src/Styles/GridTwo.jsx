@@ -16,6 +16,8 @@ export const CardOne = styled.div`
     width: 500px;
     background-color: gray;
     border-radius: 10%;
+    display: flex;
+    justify-content: center;
   }
 `;
 
@@ -26,6 +28,8 @@ export const CardTwo = styled.div`
     width: 500px;
     background-color: gray;
     border-radius: 10%;
+    display: flex;
+    justify-content: center;
   }
 `;
 
@@ -36,6 +40,8 @@ export const CardThree = styled.div`
     width: 500px;
     background-color: gray;
     border-radius: 10%;
+    display: flex;
+    justify-content: center;
   }
 `;
 
@@ -46,6 +52,8 @@ export const CardFour = styled.div`
     width: 500px;
     background-color: gray;
     border-radius: 10%;
+    display: flex;
+    justify-content: center;
   }
 `;
 

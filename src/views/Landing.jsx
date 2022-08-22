@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import About from '../components/About';
 import FMM from '../components/FMM';
 import Forage from '../components/Forage';
 import LandingPage from '../components/LandingPage';
+import { CollapsedCards } from '../Styles/CollapsedCards';
 import {
   GridContainer,
   CardOne,
@@ -17,8 +18,10 @@ import {
   Links,
 } from '../Styles/GridTwo';
 import { LandingBackground } from '../Styles/Home';
+import { FaParking } from 'react-icons/fa';
 
 export default function Landing() {
+  const [expand, setExpand] = useState(true);
   return (
     <>
       <GridContainer>
@@ -39,11 +42,26 @@ export default function Landing() {
         <Bio>
           <About />
         </Bio>
-        <CardOne>
+        {/* <CardOne>
           <Link to="/FMM">
             <FMM />
           </Link>
+        </CardOne> */}
+
+        <CardOne onClick={() => setExpand(!expand)}>
+          {expand ? (
+            <CollapsedCards>
+              <h1>Full-Metal-Messenger</h1>
+              {''}
+              <h2>
+                <FaParking size={200} />
+              </h2>
+            </CollapsedCards>
+          ) : (
+            <FMM />
+          )}
         </CardOne>
+
         <CardTwo>
           <Forage />
         </CardTwo>

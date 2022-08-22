@@ -3,9 +3,10 @@
     display:flex;
     justify-content: center;
     color: rgba(228, 213, 213, 0.589);
-    background-color: rgb(42, 53, 100);
-    background-image: '../assets/water.jpg';
+    color:rgba(138, 135, 135, 0.712);
+border-radius: 15%;
     /* try to use z-index */
+     
 }
 .testContainer{
     /* display:flex;

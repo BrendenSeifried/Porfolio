@@ -7,5 +7,6 @@ export const CardContainer = styled.div`
   h2{
     display: flex;
     justify content: left;
+    
   }
 `;

@@ -33,6 +33,9 @@ export const AboutContainer = styled.div`
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 30px;
   }
+  image{
+    height: 100vh;
+  }
 `;
 
 export const LandingBackground = styled.div`
