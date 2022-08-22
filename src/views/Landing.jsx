@@ -56,6 +56,7 @@ export default function Landing() {
               <h2>
                 <FaParking size={200} />
               </h2>
+              <h3>React | SupaBase | Chakra-UI | Netlify | 3-Person Team</h3>
             </CollapsedCards>
           ) : (
             <FMM />
