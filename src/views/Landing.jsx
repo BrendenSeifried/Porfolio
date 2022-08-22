@@ -18,8 +18,9 @@ import {
   Links,
 } from '../Styles/GridTwo';
 import { LandingBackground } from '../Styles/Home';
-import { FaParking } from 'react-icons/fa';
+import { FaParking, FaUserSecret } from 'react-icons/fa';
 import { GiMagicShield } from 'react-icons/gi';
+import { BsShopWindow } from 'react-icons/bs';
 
 export default function Landing() {
   const [expand, setExpand] = useState(true);
@@ -59,10 +60,6 @@ export default function Landing() {
           )}
         </CardOne>
 
-        {/* <CardTwo>
-          <Forage />
-        </CardTwo> */}
-
         <CardTwo onClick={() => setExpand(!expand)}>
           {expand ? (
             <CollapsedCards>
@@ -71,15 +68,42 @@ export default function Landing() {
               <h2>
                 <GiMagicShield size={200} />
               </h2>
-              <h3>React | SupaBase | MapBox | Netlify | 4-Person Team</h3>
+              <h3>React | SupaBase | Netlify | 4-Person Team</h3>
             </CollapsedCards>
           ) : (
             <Forage />
           )}
         </CardTwo>
 
-        <CardThree></CardThree>
-        <CardFour></CardFour>
+        <CardThree onClick={() => setExpand(!expand)}>
+          {expand ? (
+            <CollapsedCards>
+              <h1>Mark-It</h1>
+              {''}
+              <h2>
+                <BsShopWindow size={200} />
+              </h2>
+              <h3>React | SupaBase | MapBox | Netlify | 4-Person Team</h3>
+            </CollapsedCards>
+          ) : (
+            <Forage />
+          )}
+        </CardThree>
+
+        <CardFour onClick={() => setExpand(!expand)}>
+          {expand ? (
+            <CollapsedCards>
+              <h1>Top-Secrets</h1>
+              {''}
+              <h2>
+                <FaUserSecret size={200} />
+              </h2>
+              <h3>React | SQL | Heroku</h3>
+            </CollapsedCards>
+          ) : (
+            <Forage />
+          )}
+        </CardFour>
         {/* </LandingBackground> */}
       </GridContainer>
     </>
