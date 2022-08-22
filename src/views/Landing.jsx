@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import About from '../components/About';
 import FMM from '../components/FMM';
 import Forage from '../components/Forage';
-import LandingPage from '../components/LandingPage';
 import { CollapsedCards } from '../Styles/CollapsedCards';
 import {
   GridContainer,
@@ -17,7 +15,6 @@ import {
   ContactResume,
   Links,
 } from '../Styles/GridTwo';
-import { LandingBackground } from '../Styles/Home';
 import { FaParking, FaUserSecret } from 'react-icons/fa';
 import { GiMagicShield } from 'react-icons/gi';
 import { BsShopWindow } from 'react-icons/bs';
@@ -45,7 +42,7 @@ export default function Landing() {
           <About />
         </Bio>
 
-        <CardOne onClick={() => setExpand(!expand)}>
+        {/* <CardOne onClick={() => setExpand(!expand)}>
           {expand ? (
             <CollapsedCards>
               <h1>Full-Metal-Messenger</h1>
@@ -58,7 +55,22 @@ export default function Landing() {
           ) : (
             <FMM />
           )}
-        </CardOne>
+        </CardOne> */}
+
+        {expand ? (
+          <CardOne onClick={() => setExpand(!expand)}>
+            <CollapsedCards>
+              <h1>Full-Metal-Messenger</h1>
+              {''}
+              <h2>
+                <FaParking size={200} />
+              </h2>
+              <h3>React | SupaBase | Chakra-UI | Netlify | 3-Person Team</h3>
+            </CollapsedCards>
+          </CardOne>
+        ) : (
+          <FMM />
+        )}
 
         <CardTwo onClick={() => setExpand(!expand)}>
           {expand ? (
