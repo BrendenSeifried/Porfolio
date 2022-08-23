@@ -9,16 +9,21 @@ const PageProvider = ({ children }) => {
   const [expandFour, setExpandFour] = useState(true);
   const [blur, setBlur] = useState(false);
 
-  const clickHandler = () => {
+  const projectOneClickHandler = () => {
     setExpandOne(!expandOne);
     setBlur(!blur);
   }
+    const projectTwoClickHandler = () => {
+    setExpandTwo(!expandTwo);
+    setBlur(!blur);
+  }
+ 
  
   return (
     <PageContext.Provider
       value={{
         blur, setBlur,
- expandOne, setExpandOne, clickHandler
+ expandOne, projectOneClickHandler, expandTwo, setExpandTwo,projectTwoClickHandler 
       }}
     >
       {children}

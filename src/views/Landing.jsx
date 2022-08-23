@@ -19,29 +19,25 @@ import { FaParking, FaUserSecret } from 'react-icons/fa';
 import { GiMagicShield } from 'react-icons/gi';
 import { BsShopWindow } from 'react-icons/bs';
 import { usePageContext } from '../context/Pages';
-// import Pages from '../hooks/Pages';
 
 export default function Landing() {
-  // const [expandOne, setExpandOne] = useState(true);
-  const [expandTwo, setExpandTwo] = useState(true);
+  // const [expandTwo, setExpandTwo] = useState(true);
   const [expandThree, setExpandThree] = useState(true);
   const [expandFour, setExpandFour] = useState(true);
-  // const [blur, setBlur] = useState(false);
-  // const [tag, setTag] = useState('');
-  const { expandOne, setExpandOne, blur, setBlur } = usePageContext();
 
-  // {
-  //   expandOne || expandTwo || expandThree || expandFour
-  //     ? setBlur(false)
-  //     : setBlur(true);
-  // }
+  const {
+    expandOne,
+    expandTwo,
+    blur,
+    setBlur,
+    projectOneClickHandler,
+    projectTwoClickHandler,
+  } = usePageContext();
 
   return (
     <>
       <GridContainer>
         {blur && <WholeSpace />}
-        {/* // {blur ? <WholeSpace /> : ''} */}
-
         <Welcome>Welcome</Welcome>
         <Links></Links>
         <ContactResume>
@@ -59,13 +55,7 @@ export default function Landing() {
         </Bio>
 
         {expandOne ? (
-          <CardOne
-            onClick={() => [
-              setExpandOne(!expandOne),
-              setBlur(!blur),
-              // setTag('FMMpic.PNG'),
-            ]}
-          >
+          <CardOne onClick={projectOneClickHandler}>
             <CollapsedCards>
               <h1>Full-Metal-Messenger</h1>
               {''}
@@ -79,11 +69,7 @@ export default function Landing() {
           <FMM />
         )}
 
-        <CardTwo
-          onClick={() => {
-            setExpandTwo(!expandTwo), setBlur(!blur);
-          }}
-        >
+        <CardTwo onClick={projectTwoClickHandler}>
           {expandTwo ? (
             <CollapsedCards>
               <h1>Forage Parking App</h1>
@@ -135,7 +121,6 @@ export default function Landing() {
             <Forage />
           )}
         </CardFour>
-        {/* </LandingBackground> */}
       </GridContainer>
     </>
   );
