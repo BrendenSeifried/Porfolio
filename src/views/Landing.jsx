@@ -19,19 +19,22 @@ import { FaParking, FaUserSecret } from 'react-icons/fa';
 import { GiMagicShield } from 'react-icons/gi';
 import { BsShopWindow } from 'react-icons/bs';
 import { usePageContext } from '../context/Pages';
+import MarkIt from '../components/Mark-It';
 
 export default function Landing() {
   // const [expandTwo, setExpandTwo] = useState(true);
-  const [expandThree, setExpandThree] = useState(true);
+  // const [expandThree, setExpandThree] = useState(true);
   const [expandFour, setExpandFour] = useState(true);
 
   const {
     expandOne,
     expandTwo,
+    expandThree,
     blur,
     setBlur,
     projectOneClickHandler,
     projectTwoClickHandler,
+    ProjectThreeClickHandler,
   } = usePageContext();
 
   return (
@@ -84,11 +87,7 @@ export default function Landing() {
           )}
         </CardTwo>
 
-        <CardThree
-          onClick={() => {
-            setExpandThree(!expandThree), setBlur(!blur);
-          }}
-        >
+        <CardThree onClick={ProjectThreeClickHandler}>
           {expandThree ? (
             <CollapsedCards>
               <h1>Mark-It</h1>
@@ -99,7 +98,7 @@ export default function Landing() {
               <h3>React | SupaBase | MapBox | Netlify | 4-Person Team</h3>
             </CollapsedCards>
           ) : (
-            <Forage />
+            <MarkIt />
           )}
         </CardThree>
 

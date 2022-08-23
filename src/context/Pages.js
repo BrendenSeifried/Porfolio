@@ -17,13 +17,18 @@ const PageProvider = ({ children }) => {
     setExpandTwo(!expandTwo);
     setBlur(!blur);
   }
+  const ProjectThreeClickHandler = () => {
+    setExpandThree(!expandThree);
+    setBlur(!blur);
+
+  }
  
  
   return (
     <PageContext.Provider
       value={{
         blur, setBlur,
- expandOne, projectOneClickHandler, expandTwo, setExpandTwo,projectTwoClickHandler 
+ expandOne, projectOneClickHandler, expandTwo, setExpandTwo,projectTwoClickHandler, expandThree, ProjectThreeClickHandler
       }}
     >
       {children}
