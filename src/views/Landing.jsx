@@ -69,7 +69,11 @@ export default function Landing() {
           <FMM />
         )}
 
-        <CardTwo onClick={() => setExpandTwo(!expandTwo)}>
+        <CardTwo
+          onClick={() => {
+            setExpandTwo(!expandTwo), setBlur(!blur);
+          }}
+        >
           {expandTwo ? (
             <CollapsedCards>
               <h1>Forage Parking App</h1>
@@ -84,7 +88,11 @@ export default function Landing() {
           )}
         </CardTwo>
 
-        <CardThree onClick={() => setExpandThree(!expandThree)}>
+        <CardThree
+          onClick={() => {
+            setExpandThree(!expandThree), setBlur(!blur);
+          }}
+        >
           {expandThree ? (
             <CollapsedCards>
               <h1>Mark-It</h1>
@@ -99,7 +107,11 @@ export default function Landing() {
           )}
         </CardThree>
 
-        <CardFour onClick={() => setExpandFour(!expandFour)}>
+        <CardFour
+          onClick={() => {
+            setExpandFour(!expandFour), setBlur(!blur);
+          }}
+        >
           {expandFour ? (
             <CollapsedCards>
               <h1>Top-Secrets</h1>
