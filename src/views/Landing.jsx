@@ -19,7 +19,7 @@ import { FaParking, FaUserSecret } from 'react-icons/fa';
 import { GiMagicShield } from 'react-icons/gi';
 import { BsShopWindow } from 'react-icons/bs';
 import { usePageContext } from '../context/Pages';
-import MarkIt from '../components/Mark-It';
+import MarkIt from '../components/MarkIt';
 
 export default function Landing() {
   // const [expandTwo, setExpandTwo] = useState(true);
