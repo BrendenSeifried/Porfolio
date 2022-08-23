@@ -1,68 +1,115 @@
 import styled from 'styled-components';
+// import appImg from `../assets/${tag}`
+// import test from '../assets/FMMpic.PNG';
 
 export const CardContainer = styled.div`
   background-color: rgb(42, 53, 100);
-  border-radius: 8%;
+  border-radius: 2%;
   display: grid;
-  // padding-left: 4rem;
-  // padding-right: 400px;
-
   box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    // width: 100px;
-    // height: 100px;
-    border: 300px blur(20px)
-    // background: #00f;
-    margin: 10px;
-    // backdrop-filter: blur(10px);
-    // filter: blur(10px);
-  
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 10px;
+  color: white;
+  border: 10px double black;
+  opacity: 0.97;
+
   position: fixed;
   top: 7%;
-  left: 10%;
+  left: 12%;
   bottom: 7%;
-  right: 10%;
+  right: 12%;
   overflow: auto;
   font-size: 21px;
   text-align: center;
 
-    -webkit-animation: fadein 2s; 
-       -moz-animation: fadein 2s; 
-        -ms-animation: fadein 2s;
-         -o-animation: fadein 2s; 
-            animation: fadein 2s;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.97;
+    }
+  }
 
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+  @-moz-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.97;
+    }
+  }
 
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.97;
+    }
+  }
 
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+  @-ms-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.97;
+    }
+  }
 
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+  @-o-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.97;
+    }
+  }
 
-
-
-  h2{
+  Logo {
+    //  margin-top: 50px;
+    width: 200px;
+    height: 200px;
+  }
+  h1 {
+    // border: 5px solid black;
+    // border-style: 0 0 solid 0;
+    border-bottom: 8px double white;
+  }
+  h2 {
     display: flex;
-    justify content: left;
+    justify-content: left;
+    margin: 2% 0 0 8%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2cm;
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+  h3 {
+    display: flex;
+    // justify-content: center;
+    // text-align: center;
 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2cm;
+    // width: 90%;
+    left: 10%;
+  }
+  a {
+    margin: 80px;
   }
 `;
+
+// export const Logo = styled.img`
+//    {
+
+//   }
+// `;

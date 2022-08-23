@@ -21,4 +21,7 @@ export const CollapsedCards = styled.div`
     display: flex;
     justify-content: center;
   }
+  image {
+    color: red;
+  }
 `;

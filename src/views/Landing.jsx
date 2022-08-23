@@ -25,6 +25,7 @@ export default function Landing() {
   const [expandThree, setExpandThree] = useState(true);
   const [expandFour, setExpandFour] = useState(true);
   const [blur, setBlur] = useState(false);
+  // const [tag, setTag] = useState('');
 
   // {
   //   expandOne || expandTwo || expandThree || expandFour
@@ -55,18 +56,24 @@ export default function Landing() {
         </Bio>
 
         {expandOne ? (
-          <CardOne onClick={() => [setExpandOne(!expandOne), setBlur(!blur)]}>
+          <CardOne
+            onClick={() => [
+              setExpandOne(!expandOne),
+              setBlur(!blur),
+              // setTag('FMMpic.PNG'),
+            ]}
+          >
             <CollapsedCards>
               <h1>Full-Metal-Messenger</h1>
               {''}
               <h2>
-                <FaParking size={200} />
+                <GiMagicShield size={200} />
               </h2>
               <h3>React | SupaBase | Chakra-UI | Netlify | 3-Person Team</h3>
             </CollapsedCards>
           </CardOne>
         ) : (
-          <FMM />
+          <FMM expandOne={expandOne} setExpandOne={setExpandOne} />
         )}
 
         <CardTwo
@@ -79,7 +86,7 @@ export default function Landing() {
               <h1>Forage Parking App</h1>
               {''}
               <h2>
-                <GiMagicShield size={200} />
+                <FaParking size={200} />
               </h2>
               <h3>React | SupaBase | Netlify | 4-Person Team</h3>
             </CollapsedCards>

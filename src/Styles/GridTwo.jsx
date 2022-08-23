@@ -99,6 +99,7 @@ export const ContactResume = styled.div`
 export const WholeSpace = styled.div`
    {
     grid-area: 2 / 2 / 8 / 11;
+
     backdrop-filter: blur(10px);
   }
 `;
