@@ -18,14 +18,17 @@ import {
 import { FaParking, FaUserSecret } from 'react-icons/fa';
 import { GiMagicShield } from 'react-icons/gi';
 import { BsShopWindow } from 'react-icons/bs';
+import { usePageContext } from '../context/Pages';
+// import Pages from '../hooks/Pages';
 
 export default function Landing() {
-  const [expandOne, setExpandOne] = useState(true);
+  // const [expandOne, setExpandOne] = useState(true);
   const [expandTwo, setExpandTwo] = useState(true);
   const [expandThree, setExpandThree] = useState(true);
   const [expandFour, setExpandFour] = useState(true);
-  const [blur, setBlur] = useState(false);
+  // const [blur, setBlur] = useState(false);
   // const [tag, setTag] = useState('');
+  const { expandOne, setExpandOne, blur, setBlur } = usePageContext();
 
   // {
   //   expandOne || expandTwo || expandThree || expandFour
@@ -73,7 +76,7 @@ export default function Landing() {
             </CollapsedCards>
           </CardOne>
         ) : (
-          <FMM expandOne={expandOne} setExpandOne={setExpandOne} />
+          <FMM />
         )}
 
         <CardTwo
