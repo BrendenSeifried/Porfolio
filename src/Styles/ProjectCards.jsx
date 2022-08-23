@@ -4,21 +4,28 @@ export const CardContainer = styled.div`
   background-color: rgb(42, 53, 100);
   border-radius: 8%;
   display: grid;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  // padding-left: 4rem;
+  // padding-right: 400px;
 
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    // width: 100px;
+    // height: 100px;
+    border: 300px blur(20px)
+    // background: #00f;
+    margin: 10px;
+    // backdrop-filter: blur(10px);
+    // filter: blur(10px);
+  
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  top: 7%;
+  left: 10%;
+  bottom: 7%;
+  right: 10%;
   overflow: auto;
-
-
-
-// margin-top: 25px;
-//     font-size: 21px;
-//     text-align: center;
+  font-size: 21px;
+  text-align: center;
 
     -webkit-animation: fadein 2s; 
        -moz-animation: fadein 2s; 

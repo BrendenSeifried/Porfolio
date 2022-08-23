@@ -20,12 +20,24 @@ import { GiMagicShield } from 'react-icons/gi';
 import { BsShopWindow } from 'react-icons/bs';
 
 export default function Landing() {
-  const [expand, setExpand] = useState(true);
+  const [expandOne, setExpandOne] = useState(true);
+  const [expandTwo, setExpandTwo] = useState(true);
+  const [expandThree, setExpandThree] = useState(true);
+  const [expandFour, setExpandFour] = useState(true);
+  const [blur, setBlur] = useState(false);
+
+  // {
+  //   expandOne || expandTwo || expandThree || expandFour
+  //     ? setBlur(false)
+  //     : setBlur(true);
+  // }
+
   return (
     <>
       <GridContainer>
-        <WholeSpace></WholeSpace>
-        {/* <LandingBackground> */}
+        {blur && <WholeSpace />}
+        {/* // {blur ? <WholeSpace /> : ''} */}
+
         <Welcome>Welcome</Welcome>
         <Links></Links>
         <ContactResume>
@@ -37,28 +49,13 @@ export default function Landing() {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum."
         </ContactResume>
-        {/* <LandingPage /> */}
+
         <Bio>
           <About />
         </Bio>
 
-        {/* <CardOne onClick={() => setExpand(!expand)}>
-          {expand ? (
-            <CollapsedCards>
-              <h1>Full-Metal-Messenger</h1>
-              {''}
-              <h2>
-                <FaParking size={200} />
-              </h2>
-              <h3>React | SupaBase | Chakra-UI | Netlify | 3-Person Team</h3>
-            </CollapsedCards>
-          ) : (
-            <FMM />
-          )}
-        </CardOne> */}
-
-        {expand ? (
-          <CardOne onClick={() => setExpand(!expand)}>
+        {expandOne ? (
+          <CardOne onClick={() => [setExpandOne(!expandOne), setBlur(!blur)]}>
             <CollapsedCards>
               <h1>Full-Metal-Messenger</h1>
               {''}
@@ -72,8 +69,8 @@ export default function Landing() {
           <FMM />
         )}
 
-        <CardTwo onClick={() => setExpand(!expand)}>
-          {expand ? (
+        <CardTwo onClick={() => setExpandTwo(!expandTwo)}>
+          {expandTwo ? (
             <CollapsedCards>
               <h1>Forage Parking App</h1>
               {''}
@@ -87,8 +84,8 @@ export default function Landing() {
           )}
         </CardTwo>
 
-        <CardThree onClick={() => setExpand(!expand)}>
-          {expand ? (
+        <CardThree onClick={() => setExpandThree(!expandThree)}>
+          {expandThree ? (
             <CollapsedCards>
               <h1>Mark-It</h1>
               {''}
@@ -102,8 +99,8 @@ export default function Landing() {
           )}
         </CardThree>
 
-        <CardFour onClick={() => setExpand(!expand)}>
-          {expand ? (
+        <CardFour onClick={() => setExpandFour(!expandFour)}>
+          {expandFour ? (
             <CollapsedCards>
               <h1>Top-Secrets</h1>
               {''}
