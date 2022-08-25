@@ -5,7 +5,8 @@ import styled, { css } from 'styled-components';
 export const GridContainer = styled.div`
    {
     // border: 1px solid #000;
-    background-image: url(${bg});
+    // background-image: url(${bg});
+    background-image: linear-gradient(to bottom right, #000000 50%, #b8b7c7);
     // width: 2000px;
     // height: 2000px;
     display: grid;
@@ -33,68 +34,28 @@ const CardStyle = css`
 export const CardOne = styled.div`
    {
     grid-area: 6 / 3 / 8 / 4;
-    ${CardStyle}//   height: 500px;
-  //   width: 500px;
-  //   background-color: gray;
-  //   border-radius: 10%;
-  //   display: flex;
-  //   justify-content: center;
-  //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  //   transition: box-shadow 0.3s ease-in-out;
-  // }
-  // :hover {
-  //   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);;;;;;;;;;;
+    ${CardStyle}
   }
 `;
 
 export const CardTwo = styled.div`
    {
     grid-area: 6 / 5 / 8 / 6;
-    ${CardStyle}//   height: 500px;
-  //   width: 500px;
-  //   background-color: gray;
-  //   border-radius: 10%;
-  //   display: flex;
-  //   justify-content: center;
-  //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  //   transition: box-shadow 0.3s ease-in-out;
-  // }
-  // :hover {
-  //   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);;;;;;;;;;;;
+    ${CardStyle}
   }
 `;
 
 export const CardThree = styled.div`
    {
     grid-area: 6 / 7 / 8 / 8;
-    ${CardStyle}//   height: 500px;
-  //   width: 500px;
-  //   background-color: gray;
-  //   border-radius: 10%;
-  //   display: flex;
-  //   justify-content: center;
-  //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  //   transition: box-shadow 0.3s ease-in-out;
-  // }
-  // :hover {
-  //   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);;;;;;;;;;;;
+    ${CardStyle}
   }
 `;
 
 export const CardFour = styled.div`
    {
     grid-area: 6 / 9 / 8 / 10;
-    ${CardStyle}//   height: 500px;
-  //   width: 500px;
-  //   background-color: gray;
-  //   border-radius: 10%;
-  //   display: flex;
-  //   justify-content: center;
-  //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  //   transition: box-shadow 0.3s ease-in-out;
-  // }
-  // :hover {
-  //   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);;;;;;;;;;;;
+    ${CardStyle}
   }
 `;
 
@@ -135,13 +96,13 @@ export const Links = styled.div`
 export const Bio = styled.div`
    {
     grid-area: 3 / 3 / 5 / 5;
-    background-color: red;
-    //////
+    // background-color: rgba(21, 2, 107, 0.2);
+    // font-size: 0.8cm;
     position: relative;
-    width: 100%;
+    width: 140%;
     height: 100%;
     margin: 20px;
-    // border: 1px solid #000;
+    color: white;
   }
   :after {
     display: block;
@@ -151,8 +112,8 @@ export const Bio = styled.div`
     position: absolute;
     top: -5px;
     left: -5px;
-    border-top: 5px solid blue;
-    border-left: 5px solid blue;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
   }
   :before {
     display: block;
@@ -162,8 +123,8 @@ export const Bio = styled.div`
     position: absolute;
     bottom: -5px;
     right: -5px;
-    border-bottom: 5px solid orange;
-    border-right: 5px solid orange;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
   }
 `;
 

@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { AboutMe } from '../Styles/AboutMe';
 
 export default function About() {
   return (
-    <>
+    <AboutMe>
       <h1>Bio</h1>
 
       <h2>Welcome to by portfolio site.</h2>
@@ -51,6 +52,6 @@ export default function About() {
       <p>
         <a href={'https://www.canva.com/design/DAE_sMgAI6I/view'}>My Resume</a>
       </p>
-    </>
+    </AboutMe>
   );
 }
