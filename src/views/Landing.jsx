@@ -3,6 +3,7 @@ import About from '../components/About';
 import FMM from '../components/FMM';
 import Forage from '../components/Forage';
 import { CollapsedCards } from '../Styles/CollapsedCards';
+
 import {
   GridContainer,
   CardOne,
@@ -14,6 +15,7 @@ import {
   WholeSpace,
   ContactResume,
   Links,
+  ProjectsTxt,
 } from '../Styles/GridTwo';
 import { FaParking, FaUserSecret } from 'react-icons/fa';
 import { GiMagicShield } from 'react-icons/gi';
@@ -23,10 +25,6 @@ import MarkIt from '../components/MarkIt';
 import TopSecrets from '../components/TopSecrets';
 
 export default function Landing() {
-  // const [expandTwo, setExpandTwo] = useState(true);
-  // const [expandThree, setExpandThree] = useState(true);
-  // const [expandFour, setExpandFour] = useState(true);
-
   const {
     expandOne,
     expandTwo,
@@ -54,6 +52,8 @@ export default function Landing() {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum."
         </ContactResume>
+
+        <ProjectsTxt>Projects</ProjectsTxt>
 
         <Bio>
           <About />

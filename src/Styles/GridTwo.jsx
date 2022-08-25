@@ -35,6 +35,11 @@ export const CardTwo = styled.div`
     border-radius: 10%;
     display: flex;
     justify-content: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  :hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   }
 `;
 
@@ -47,6 +52,11 @@ export const CardThree = styled.div`
     border-radius: 10%;
     display: flex;
     justify-content: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  :hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   }
 `;
 
@@ -59,6 +69,11 @@ export const CardFour = styled.div`
     border-radius: 10%;
     display: flex;
     justify-content: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  :hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   }
 `;
 
@@ -66,6 +81,12 @@ export const ProjectsTxt = styled.div`
    {
     grid-area: 5 / 6 / 6 / 7;
     background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 2cm;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-top: 25%;
   }
 `;
 
@@ -74,6 +95,12 @@ export const Welcome = styled.div`
     grid-area: 2 / 3 / 3 / 4;
     background-color: blue;
     height: 50px;
+    color: white;
+    text-align: center;
+    font-size: 2cm;
+    font-weight: bolder;
+    // text-decoration: underline;
+    padding-bottom: 15%;
   }
 `;
 
