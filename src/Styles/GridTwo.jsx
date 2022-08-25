@@ -18,6 +18,11 @@ export const CardOne = styled.div`
     border-radius: 10%;
     display: flex;
     justify-content: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  :hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   }
 `;
 
@@ -99,7 +104,6 @@ export const ContactResume = styled.div`
 export const WholeSpace = styled.div`
    {
     grid-area: 2 / 2 / 8 / 11;
-
     backdrop-filter: blur(10px);
   }
 `;

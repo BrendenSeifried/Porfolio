@@ -5,6 +5,9 @@
     color: rgba(228, 213, 213, 0.589);
     color:rgba(138, 135, 135, 0.712);
 border-radius: 15%;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    box-shadow: 5px 10px black;
     /* try to use z-index */
      
 }
