@@ -14,9 +14,8 @@ export const Links = styled.p`
   font-size: 0.7cm;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   a {
-    display: flex;
-    flex-direction: row;
     margin: 50px;
   }
 `;

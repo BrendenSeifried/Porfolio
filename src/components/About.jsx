@@ -25,7 +25,6 @@ export default function About() {
         Please take some time to explore this website and do not hesitate to
         contact me!{' '}
       </p>
-      <p>Brenden Seifried </p>
       <Links>
         <a href={'mailto:brendenseifried@gmail.com'}>
           brendenseifried@gmail.com
