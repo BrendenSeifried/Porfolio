@@ -16,6 +16,7 @@ export const Links = styled.p`
   flex-direction: row;
   justify-content: center;
   a {
+    color: inherit;
     margin: 50px;
   }
 `;
