@@ -41,7 +41,7 @@ export default function Landing() {
     <>
       <GridContainer>
         {blur && <WholeSpace />}
-        <Welcome>Welcome</Welcome>
+        {/* <Welcome>Welcome</Welcome> */}
         <Links></Links>
         <ContactResume>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

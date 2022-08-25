@@ -4,6 +4,10 @@ import styled, { css } from 'styled-components';
 
 export const GridContainer = styled.div`
    {
+    a:visited {
+      text-decoration: none;
+    }
+
     // border: 1px solid #000;
     // background-image: url(${bg});
     background-image: linear-gradient(to bottom right, #000000 50%, #b8b7c7);
@@ -96,7 +100,7 @@ export const Links = styled.div`
 export const Bio = styled.div`
    {
     grid-area: 3 / 3 / 5 / 5;
-    // background-color: rgba(21, 2, 107, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
     // font-size: 0.8cm;
     position: relative;
     width: 140%;

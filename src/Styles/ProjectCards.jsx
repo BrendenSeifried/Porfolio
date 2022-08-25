@@ -3,6 +3,8 @@ import styled from 'styled-components';
 // import test from '../assets/FMMpic.PNG';
 
 export const CardContainer = styled.div`
+
+ 
 height: 95vh;
 margin-bottom: 10%;
   background-color: rgb(42, 53, 100);
@@ -106,16 +108,18 @@ margin-bottom: 10%;
     left: 10%;
   }
   a {
-    
+    color: inherit;
     margin: 80px;
   }
  a:hover,
     a:focus {
       opacity: 0.75;
+      color: inherit;
     }
-    a:visited { 
- text-decoration: none; 
-}
+  a:visited {    
+    text-decoration: none; 
+    color: inherit;
+    }
  
 
 button {
