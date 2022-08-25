@@ -15,7 +15,7 @@ export const GridContainer = styled.div`
     // height: 2000px;
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr 1fr 1fr 0.2fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
     gap: 0px 0px;
   }
 `;
@@ -66,7 +66,7 @@ export const CardFour = styled.div`
 export const ProjectsTxt = styled.div`
    {
     grid-area: 5 / 6 / 6 / 7;
-    background-color: blue;
+    // background-color: blue;
     color: white;
     text-align: center;
     font-size: 2cm;
@@ -134,10 +134,13 @@ export const Bio = styled.div`
 
 export const ContactResume = styled.div`
    {
+    background-color: rgba(255, 255, 255, 0.05);
+
     grid-area: 3 / 7 / 6 / 11;
-    background-color: orange;
+    // background-color: orange;
     height: 80%;
     margin-right: 100px;
+    border: 5px solid white;
   }
 `;
 
