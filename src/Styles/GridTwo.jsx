@@ -99,7 +99,6 @@ export const Welcome = styled.div`
     text-align: center;
     font-size: 2cm;
     font-weight: bolder;
-    // text-decoration: underline;
     padding-bottom: 15%;
   }
 `;
@@ -116,6 +115,34 @@ export const Bio = styled.div`
    {
     grid-area: 3 / 3 / 5 / 5;
     background-color: red;
+    //////
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    // border: 1px solid #000;
+  }
+  :after {
+    display: block;
+    content: '';
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border-top: 5px solid blue;
+    border-left: 5px solid blue;
+  }
+  :before {
+    display: block;
+    content: '';
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    border-bottom: 5px solid orange;
+    border-right: 5px solid orange;
   }
 `;
 
