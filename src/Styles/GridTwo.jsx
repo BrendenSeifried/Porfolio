@@ -8,13 +8,7 @@ export const GridContainer = styled.div`
       text-decoration: none;
     }
 
-    overflow: hidden;
-
-    // border: 1px solid #000;
-    // background-image: url(${bg});
     background-image: linear-gradient(to bottom right, #000000 50%, #b8b7c7);
-    // width: 2000px;
-    // height: 2000px;
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr 1fr 1fr 0.2fr;
     grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
@@ -25,14 +19,18 @@ export const GridContainer = styled.div`
 const CardStyle = css`
     height: 500px;
     width: 500px;
-    background-color: gray;
+    background-color: rgb(77, 77, 77);
+    // background-color: gray;
+    // background-color: rgb(15, 1, 75); blue option
     border-radius: 10%;
     display: flex;
     justify-content: center;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); 
     transition: box-shadow 0.3s ease-in-out;
   }
   :hover {
+    // background-color: rgb(26, 2, 131);  light up blue
+    background-color: rgb(110, 110, 110);
     box-shadow: 0 9px 30px rgba(255, 255, 255, 0.7);
   }
 `;

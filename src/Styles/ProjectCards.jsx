@@ -7,7 +7,9 @@ export const CardContainer = styled.div`
  
 height: 95vh;
 margin-bottom: 10%;
-  background-color: rgb(42, 53, 100);
+  // background-color: rgb(42, 53, 100);
+   background-color: rgb(15, 1, 75);
+
   border-radius: 2%;
   display: grid;
   box-sizing: border-box;
