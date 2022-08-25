@@ -1,7 +1,13 @@
-import styled from 'styled-components';
+// import styled from 'styled-components';
+import bg from '../assets/bg2.png';
+import styled, { css } from 'styled-components';
 
 export const GridContainer = styled.div`
    {
+    // border: 1px solid #000;
+    background-image: url(${bg});
+    // width: 2000px;
+    // height: 2000px;
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr 1fr 1fr 0.2fr;
     grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
@@ -9,9 +15,7 @@ export const GridContainer = styled.div`
   }
 `;
 
-export const CardOne = styled.div`
-   {
-    grid-area: 6 / 3 / 8 / 4;
+const CardStyle = css`
     height: 500px;
     width: 500px;
     background-color: gray;
@@ -22,58 +26,75 @@ export const CardOne = styled.div`
     transition: box-shadow 0.3s ease-in-out;
   }
   :hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 9px 30px rgba(255, 255, 255, 0.7);
+  }
+`;
+
+export const CardOne = styled.div`
+   {
+    grid-area: 6 / 3 / 8 / 4;
+    ${CardStyle}//   height: 500px;
+  //   width: 500px;
+  //   background-color: gray;
+  //   border-radius: 10%;
+  //   display: flex;
+  //   justify-content: center;
+  //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  //   transition: box-shadow 0.3s ease-in-out;
+  // }
+  // :hover {
+  //   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);;;;;;;;;;;
   }
 `;
 
 export const CardTwo = styled.div`
    {
     grid-area: 6 / 5 / 8 / 6;
-    height: 500px;
-    width: 500px;
-    background-color: gray;
-    border-radius: 10%;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.3s ease-in-out;
-  }
-  :hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    ${CardStyle}//   height: 500px;
+  //   width: 500px;
+  //   background-color: gray;
+  //   border-radius: 10%;
+  //   display: flex;
+  //   justify-content: center;
+  //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  //   transition: box-shadow 0.3s ease-in-out;
+  // }
+  // :hover {
+  //   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);;;;;;;;;;;;
   }
 `;
 
 export const CardThree = styled.div`
    {
     grid-area: 6 / 7 / 8 / 8;
-    height: 500px;
-    width: 500px;
-    background-color: gray;
-    border-radius: 10%;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.3s ease-in-out;
-  }
-  :hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    ${CardStyle}//   height: 500px;
+  //   width: 500px;
+  //   background-color: gray;
+  //   border-radius: 10%;
+  //   display: flex;
+  //   justify-content: center;
+  //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  //   transition: box-shadow 0.3s ease-in-out;
+  // }
+  // :hover {
+  //   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);;;;;;;;;;;;
   }
 `;
 
 export const CardFour = styled.div`
    {
     grid-area: 6 / 9 / 8 / 10;
-    height: 500px;
-    width: 500px;
-    background-color: gray;
-    border-radius: 10%;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.3s ease-in-out;
-  }
-  :hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    ${CardStyle}//   height: 500px;
+  //   width: 500px;
+  //   background-color: gray;
+  //   border-radius: 10%;
+  //   display: flex;
+  //   justify-content: center;
+  //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  //   transition: box-shadow 0.3s ease-in-out;
+  // }
+  // :hover {
+  //   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);;;;;;;;;;;;
   }
 `;
 
