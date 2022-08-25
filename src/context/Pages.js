@@ -20,7 +20,11 @@ const PageProvider = ({ children }) => {
   const ProjectThreeClickHandler = () => {
     setExpandThree(!expandThree);
     setBlur(!blur);
+  }
 
+   const ProjectFourClickHandler = () => {
+    setExpandFour(!expandFour);
+    setBlur(!blur);
   }
  
  
@@ -28,7 +32,7 @@ const PageProvider = ({ children }) => {
     <PageContext.Provider
       value={{
         blur, setBlur,
- expandOne, projectOneClickHandler, expandTwo, setExpandTwo,projectTwoClickHandler, expandThree, ProjectThreeClickHandler
+ expandOne, projectOneClickHandler, expandTwo, setExpandTwo,projectTwoClickHandler, expandThree, ProjectThreeClickHandler, ProjectFourClickHandler, expandFour
       }}
     >
       {children}

@@ -20,21 +20,23 @@ import { GiMagicShield } from 'react-icons/gi';
 import { BsShopWindow } from 'react-icons/bs';
 import { usePageContext } from '../context/Pages';
 import MarkIt from '../components/MarkIt';
+import TopSecrets from '../components/TopSecrets';
 
 export default function Landing() {
   // const [expandTwo, setExpandTwo] = useState(true);
   // const [expandThree, setExpandThree] = useState(true);
-  const [expandFour, setExpandFour] = useState(true);
+  // const [expandFour, setExpandFour] = useState(true);
 
   const {
     expandOne,
     expandTwo,
     expandThree,
+    expandFour,
     blur,
-    setBlur,
     projectOneClickHandler,
     projectTwoClickHandler,
     ProjectThreeClickHandler,
+    ProjectFourClickHandler,
   } = usePageContext();
 
   return (
@@ -57,8 +59,8 @@ export default function Landing() {
           <About />
         </Bio>
 
-        {expandOne ? (
-          <CardOne onClick={projectOneClickHandler}>
+        <CardOne onClick={projectOneClickHandler}>
+          {expandOne ? (
             <CollapsedCards>
               <h1>Full-Metal-Messenger</h1>
               {''}
@@ -67,10 +69,10 @@ export default function Landing() {
               </h2>
               <h3>React | SupaBase | Chakra-UI | Netlify | 3-Person Team</h3>
             </CollapsedCards>
-          </CardOne>
-        ) : (
-          <FMM />
-        )}
+          ) : (
+            <FMM />
+          )}
+        </CardOne>
 
         <CardTwo onClick={projectTwoClickHandler}>
           {expandTwo ? (
@@ -102,11 +104,7 @@ export default function Landing() {
           )}
         </CardThree>
 
-        <CardFour
-          onClick={() => {
-            setExpandFour(!expandFour), setBlur(!blur);
-          }}
-        >
+        <CardFour onClick={ProjectFourClickHandler}>
           {expandFour ? (
             <CollapsedCards>
               <h1>Top-Secrets</h1>
@@ -114,10 +112,10 @@ export default function Landing() {
               <h2>
                 <FaUserSecret size={200} />
               </h2>
-              <h3>React | SQL | Heroku</h3>
+              <h3>React | SQL | Heroku | Unit Testing</h3>
             </CollapsedCards>
           ) : (
-            <Forage />
+            <TopSecrets />
           )}
         </CardFour>
       </GridContainer>

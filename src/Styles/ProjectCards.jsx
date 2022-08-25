@@ -3,6 +3,8 @@ import styled from 'styled-components';
 // import test from '../assets/FMMpic.PNG';
 
 export const CardContainer = styled.div`
+height: 95vh;
+margin-bottom: 10%;
   background-color: rgb(42, 53, 100);
   border-radius: 2%;
   display: grid;
@@ -111,6 +113,9 @@ export const CardContainer = styled.div`
     a:focus {
       opacity: 0.75;
     }
+    a:visited { 
+ text-decoration: none; 
+}
  
 
 button {
