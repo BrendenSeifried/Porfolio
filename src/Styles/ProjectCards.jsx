@@ -17,16 +17,15 @@ margin-bottom: 10%;
   color: white;
   border: 10px double black;
   opacity: 0.97;
-
   position: fixed;
-  top: 7%;
+  top: 2%;
   left: 12%;
   bottom: 7%;
   right: 12%;
   overflow: auto;
   font-size: 21px;
   text-align: center;
-
+ overflow: hidden;
   -webkit-animation: fadein 3s;
   -moz-animation: fadein 3s;
   -ms-animation: fadein 3s;
@@ -84,8 +83,6 @@ margin-bottom: 10%;
     height: 200px;
   }
   h1 {
-    // border: 5px solid black;
-    // border-style: 0 0 solid 0;
     border-bottom: 8px double white;
   }
   h2 {
@@ -99,9 +96,6 @@ margin-bottom: 10%;
   }
   h3 {
     display: flex;
-    // justify-content: center;
-    // text-align: center;
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2cm;
     // width: 90%;
@@ -111,18 +105,21 @@ margin-bottom: 10%;
     color: inherit;
     margin: 80px;
   }
+
  a:hover,
     a:focus {
       opacity: 0.75;
       color: inherit;
     }
+
   a:visited {    
     text-decoration: none; 
     color: inherit;
     }
- 
 
 button {
+ overflow: hidden;
+
   font-size: 1.2cm;
       background-color: #222;
       border-radius: 4px;
@@ -148,6 +145,8 @@ button {
       touch-action: manipulation;
       width: 20%;
       height: 120%;
+      border-top: 2px solid white;
+      border-right: 2px solid white;
     }
 
     button:hover,
@@ -156,9 +155,3 @@ button {
     }
   }
 `;
-
-// export const Logo = styled.img`
-//    {
-
-//   }
-// `;

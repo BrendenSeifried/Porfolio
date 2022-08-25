@@ -8,6 +8,8 @@ export const GridContainer = styled.div`
       text-decoration: none;
     }
 
+    overflow: hidden;
+
     // border: 1px solid #000;
     // background-image: url(${bg});
     background-image: linear-gradient(to bottom right, #000000 50%, #b8b7c7);

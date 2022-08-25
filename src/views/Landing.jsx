@@ -23,6 +23,7 @@ import { BsShopWindow } from 'react-icons/bs';
 import { usePageContext } from '../context/Pages';
 import MarkIt from '../components/MarkIt';
 import TopSecrets from '../components/TopSecrets';
+import Resume from '../components/Resume';
 
 export default function Landing() {
   const {
@@ -44,13 +45,17 @@ export default function Landing() {
         {/* <Welcome>Welcome</Welcome> */}
         {/* <Links></Links> */}
         <ContactResume>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          <img src="https://imgur.com/a/NFwiwcw" alt="image" />
+          {/* "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum."
+           */}
+
+          <Resume />
         </ContactResume>
 
         <ProjectsTxt>Projects</ProjectsTxt>

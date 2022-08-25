@@ -11,9 +11,9 @@ export default function About() {
         coding journey began in 2013 when I was hired onto a Semi-Conductor
         company to code PLC (programable logic controllers). After completing
         the job I went back into the workforce as general labor but always
-        considered going deeper into the software industry. In December of 2021
-        I decided to take the plunge and return to the industry to become a
-        web-developer.
+        considered going back into software development. In December of 2021 I
+        decided to take the plunge and return to the industry to become a
+        full-stack web-developer.
       </p>
       <p>
         I joined the Alchemy Code Labs based in Portland, OR where I created

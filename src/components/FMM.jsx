@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa';
-import { CardContainer, Logo } from '../Styles/ProjectCards';
+import { CardContainer } from '../Styles/ProjectCards';
 import { GiMagicShield } from 'react-icons/gi';
 import { usePageContext } from '../context/Pages';
 
@@ -21,10 +21,10 @@ export default function FMM() {
       </h3>
       <p>
         <a href={'https://github.com/Full-Metal-Messenger/FMMessenger'}>
-          <FaGithub size={200} />
+          <FaGithub size={150} />
         </a>
         <a href={'https://fm-messenger.netlify.app/auth'}>
-          <FaLink size={200} />
+          <FaLink size={150} />
         </a>
       </p>
       <button onClick={projectOneClickHandler}>GoBack</button>
