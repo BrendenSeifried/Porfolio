@@ -2,10 +2,8 @@
 import bg from '../assets/bg2.png';
 import styled, { css } from 'styled-components';
 
-export const Scaled = styled.div`
-  // -moz-transform: scale(0.8);
-  // -webkit-transform: scale(0.8);
-  // transform: scale(0.8);
+export const BgBorder = styled.div`
+  background-color: gold;
 `;
 
 export const GridContainer = styled.div`

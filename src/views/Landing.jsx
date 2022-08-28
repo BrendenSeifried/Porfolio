@@ -16,7 +16,6 @@ import {
   ContactResume,
   Links,
   ProjectsTxt,
-  Scaled,
 } from '../Styles/GridTwo';
 import { FaParking, FaUserSecret } from 'react-icons/fa';
 import { GiMagicShield } from 'react-icons/gi';
@@ -40,7 +39,7 @@ export default function Landing() {
   } = usePageContext();
 
   return (
-    <Scaled>
+    <>
       <GridContainer>
         {blur && <WholeSpace />}
         {/* <Welcome>Welcome</Welcome> */}
@@ -125,6 +124,6 @@ export default function Landing() {
           )}
         </CardFour>
       </GridContainer>
-    </Scaled>
+    </>
   );
 }
