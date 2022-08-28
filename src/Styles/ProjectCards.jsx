@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
 
- 
 height: 95vh;
 margin-bottom: 10%;
   // background-color: rgb(42, 53, 100);
@@ -25,7 +24,7 @@ margin-bottom: 10%;
   bottom: 7%;
   right: 12%;
   overflow: auto;
-  font-size: 21px;
+  // font-size: 21px;
   text-align: center;
  overflow: hidden;
   -webkit-animation: fadein 3s;
@@ -92,14 +91,14 @@ margin-bottom: 10%;
     justify-content: left;
     margin: 2% 0 0 8%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2cm;
+    font-size: 1cm;
     font-weight: bolder;
     text-decoration: underline;
   }
   h3 {
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2cm;
+    // font-size: 1.2cm;
     // width: 90%;
     left: 10%;
   }
@@ -120,35 +119,36 @@ margin-bottom: 10%;
     }
 
 button {
- overflow: hidden;
-
-  font-size: 1.2cm;
-      background-color: #222;
-      border-radius: 4px;
-      border-style: none;
-      box-sizing: border-box;
-      color: white;
-      cursor: pointer;
-      display: inline-block;
-      font-family: 'Farfetch Basis', 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.5;
-      margin: 0;
-      max-width: none;
-      min-height: 44px;
-      min-width: 10px;
-      outline: none;
-      overflow: hidden;
-      padding: 9px 20px 8px;
-      position: relative;
-      text-align: center;
-      text-transform: none;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      width: 20%;
-      height: 120%;
-      border-top: 2px solid white;
-      border-right: 2px solid white;
+//  overflow: hidden;
+//   display:flex;
+//   justify-content: right;
+//   font-size: 1.2cm;
+//       background-color: #222;
+//       border-radius: 4px;
+//       border-style: none;
+//       box-sizing: border-box;
+//       color: white;
+//       cursor: pointer;
+//       display: inline-block;
+//       font-family: 'Farfetch Basis', 'Helvetica Neue', Arial, sans-serif;
+//       line-height: 1.5;
+//       margin: 0;
+//       max-width: none;
+//       min-height: 44px;
+//       min-width: 10px;
+//       outline: none;
+//       overflow: hidden;
+//       padding: 9px 20px 8px;
+//       position: relative;
+//       text-align: center;
+//       text-transform: none;
+//       user-select: none;
+//       -webkit-user-select: none;
+//       touch-action: manipulation;
+//       width: 20%;
+//       height: 120%;
+//       border-top: 2px solid white;
+//       border-right: 2px solid white;
     }
 
     button:hover,

@@ -11,7 +11,7 @@ export default function FMM() {
       <h2>Full-Metal-Messenger</h2>
 
       <h1>
-        <GiMagicShield size={400} />
+        <GiMagicShield size={250} />
       </h1>
 
       <h3>
@@ -21,13 +21,13 @@ export default function FMM() {
       </h3>
       <p>
         <a href={'https://github.com/Full-Metal-Messenger/FMMessenger'}>
-          <FaGithub size={150} />
+          <FaGithub size={100} />
         </a>
         <a href={'https://fm-messenger.netlify.app/auth'}>
-          <FaLink size={150} />
+          <FaLink size={100} />
         </a>
       </p>
-      <button onClick={projectOneClickHandler}>GoBack</button>
+      <button onClick={projectOneClickHandler}>Close</button>
     </CardContainer>
   );
 }
