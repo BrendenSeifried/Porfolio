@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+// import { usePageContext } from '../context/Pages';
+// const { blur } = usePageContext();
 
 export const AboutMe = styled.div`
-  font-size: 0.7cm;
+  // font-size: 0.7cm;
 
   a {
     display: flex;
@@ -11,7 +13,7 @@ export const AboutMe = styled.div`
 `;
 
 export const Links = styled.p`
-  font-size: 0.7cm;
+  // font-size: 0.7cm;
   display: flex;
   flex-direction: row;
   justify-content: center;

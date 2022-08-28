@@ -14,7 +14,7 @@ export const AboutContainer = styled.div`
     display: flex;
     justify-content: left;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 100px;
+    // font-size: 100px;
     margin: -30px 0px -30px 0px;
   }
   h3 {
@@ -23,7 +23,7 @@ export const AboutContainer = styled.div`
     display: flex;
     justify-content: left;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 50px;
+    // font-size: 50px;
   }
   p {
     color: rgba(238, 229, 229, 0.849);
@@ -31,9 +31,9 @@ export const AboutContainer = styled.div`
     display: flex;
     justify-content: left;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 30px;
+    // font-size: 30px;
   }
-  image{
+  image {
     height: 100vh;
   }
 `;

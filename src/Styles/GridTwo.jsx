@@ -2,6 +2,12 @@
 import bg from '../assets/bg2.png';
 import styled, { css } from 'styled-components';
 
+export const Scaled = styled.div`
+  // -moz-transform: scale(0.8);
+  // -webkit-transform: scale(0.8);
+  // transform: scale(0.8);
+`;
+
 export const GridContainer = styled.div`
    {
     a:visited {
@@ -17,8 +23,9 @@ export const GridContainer = styled.div`
 `;
 
 const CardStyle = css`
-    height: 500px;
-    width: 500px;
+    height: 380px;
+    width: 400px;
+    // width: 500px;
     background-color: rgb(77, 77, 77);
     // background-color: gray;
     // background-color: rgb(15, 1, 75); blue option
@@ -72,7 +79,7 @@ export const ProjectsTxt = styled.div`
     font-size: 2cm;
     font-weight: bolder;
     text-decoration: underline;
-    margin-top: 25%;
+    margin-top: 40%;
   }
 `;
 
@@ -83,7 +90,7 @@ export const Welcome = styled.div`
     height: 50px;
     color: white;
     text-align: center;
-    font-size: 2cm;
+    // font-size: 2cm;
     font-weight: bolder;
     padding-bottom: 15%;
   }

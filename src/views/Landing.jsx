@@ -16,6 +16,7 @@ import {
   ContactResume,
   Links,
   ProjectsTxt,
+  Scaled,
 } from '../Styles/GridTwo';
 import { FaParking, FaUserSecret } from 'react-icons/fa';
 import { GiMagicShield } from 'react-icons/gi';
@@ -39,7 +40,7 @@ export default function Landing() {
   } = usePageContext();
 
   return (
-    <>
+    <Scaled>
       <GridContainer>
         {blur && <WholeSpace />}
         {/* <Welcome>Welcome</Welcome> */}
@@ -70,9 +71,9 @@ export default function Landing() {
               <h1>Full-Metal-Messenger</h1>
               {''}
               <h2>
-                <GiMagicShield size={200} />
+                <GiMagicShield size={150} />
               </h2>
-              <h3>React | SupaBase | Chakra-UI | Netlify | 3-Person Team</h3>
+              <h3>React | SupaBase | Chakra-UI | Netlify </h3>
             </CollapsedCards>
           ) : (
             <FMM />
@@ -85,9 +86,9 @@ export default function Landing() {
               <h1>Forage Parking App</h1>
               {''}
               <h2>
-                <FaParking size={200} />
+                <FaParking size={150} />
               </h2>
-              <h3>React | SupaBase | Netlify | 4-Person Team</h3>
+              <h3>React | SupaBase | Netlify </h3>
             </CollapsedCards>
           ) : (
             <Forage />
@@ -100,9 +101,9 @@ export default function Landing() {
               <h1>Mark-It</h1>
               {''}
               <h2>
-                <BsShopWindow size={200} />
+                <BsShopWindow size={150} />
               </h2>
-              <h3>React | SupaBase | MapBox | Netlify | 4-Person Team</h3>
+              <h3>React | SupaBase | MapBox | Netlify </h3>
             </CollapsedCards>
           ) : (
             <MarkIt />
@@ -115,7 +116,7 @@ export default function Landing() {
               <h1>Top-Secrets</h1>
               {''}
               <h2>
-                <FaUserSecret size={200} />
+                <FaUserSecret size={150} />
               </h2>
               <h3>React | SQL | Heroku | Unit Testing</h3>
             </CollapsedCards>
@@ -124,6 +125,6 @@ export default function Landing() {
           )}
         </CardFour>
       </GridContainer>
-    </>
+    </Scaled>
   );
 }
