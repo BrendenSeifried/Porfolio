@@ -58,7 +58,7 @@ export default function Landing() {
           <Resume />
         </ContactResume>
 
-        <ProjectsTxt>Projects</ProjectsTxt>
+        {/* <ProjectsTxt>Projects</ProjectsTxt> */}
 
         <Bio>
           <About />

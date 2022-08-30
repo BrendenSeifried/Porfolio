@@ -12,19 +12,22 @@ export const GridContainer = styled.div`
       text-decoration: none;
     }
 
-    background-image: linear-gradient(to bottom right, #000000 50%, #b8b7c7);
+    // background-image: linear-gradient(to bottom right, #000000 50%, #b8b7c7);
+    background-image: linear-gradient(to bottom right, #3c096c 50%, #9d4edd);
+
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr 1fr 1fr 0.2fr;
-    grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr 1fr 0.7fr 1fr 1fr 0.2fr;
     gap: 0px 0px;
   }
 `;
 
 const CardStyle = css`
-    height: 380px;
+    height: 300px;
     width: 400px;
     // width: 500px;
-    background-color: rgb(77, 77, 77);
+    // background-color: rgb(77, 77, 77);
+    background-color: #8e94f2;
     // background-color: gray;
     // background-color: rgb(15, 1, 75); blue option
     border-radius: 10%;
@@ -35,7 +38,8 @@ const CardStyle = css`
   }
   :hover {
     // background-color: rgb(26, 2, 131);  light up blue
-    background-color: rgb(110, 110, 110);
+    // background-color: rgb(110, 110, 110);
+    background-color: #bbadff;
     box-shadow: 0 9px 30px rgba(255, 255, 255, 0.7);
   }
 `;
@@ -105,7 +109,7 @@ export const Links = styled.div`
 export const Bio = styled.div`
    {
     grid-area: 3 / 3 / 5 / 5;
-    background-color: rgba(255, 255, 255, 0.05);
+    // background-color: rgba(255, 255, 255, 0.05);
     // font-size: 0.8cm;
     position: relative;
     width: 140%;
@@ -121,6 +125,7 @@ export const Bio = styled.div`
     position: absolute;
     top: -5px;
     left: -5px;
+
     border-top: 5px solid white;
     border-left: 5px solid white;
   }
@@ -132,6 +137,7 @@ export const Bio = styled.div`
     position: absolute;
     bottom: -5px;
     right: -5px;
+
     border-bottom: 5px solid white;
     border-right: 5px solid white;
   }
