@@ -54,6 +54,9 @@ const CardStyle = css`
     background-color: #E7BC91;
     box-shadow: 0 9px 30px rgba(255, 255, 255, 0.7);
   }
+  h3{
+    margin-bottom: 10%;
+  }
 `;
 
 export const CardOne = styled.div`
@@ -128,6 +131,7 @@ export const Bio = styled.div`
     height: 100%;
     margin: 20px;
     color: black;
+    font-weight: bolder;
   }
   :after {
     display: block;
@@ -135,8 +139,8 @@ export const Bio = styled.div`
     width: 20%;
     height: 20%;
     position: absolute;
-    top: -5px;
-    left: -5px;
+    top: -2%;
+    left: -5%;
 
     border-top: 5px solid white;
     border-left: 5px solid white;
@@ -147,8 +151,8 @@ export const Bio = styled.div`
     width: 20%;
     height: 20%;
     position: absolute;
-    bottom: -5px;
-    right: -5px;
+    bottom: -2%;
+    right: -5%;
 
     border-bottom: 5px solid white;
     border-right: 5px solid white;
