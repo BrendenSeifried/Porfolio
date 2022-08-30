@@ -13,8 +13,20 @@ export const GridContainer = styled.div`
     }
 
     // background-image: linear-gradient(to bottom right, #000000 50%, #b8b7c7);
-    background-image: linear-gradient(to bottom right, #3c096c 50%, #9d4edd);
-
+    // background-image: linear-gradient(to bottom right, #3c096c 50%, #9d4edd);
+    background-image: linear-gradient(
+      135deg,
+      #ffedd8ff,
+      #f3d5b5ff,
+      #e7bc91ff,
+      #d4a276ff,
+      #bc8a5fff,
+      #a47148ff,
+      #8b5e34ff,
+      #6f4518ff,
+      #603808ff,
+      #583101ff
+    );
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr 1fr 1fr 0.2fr;
     grid-template-rows: 0.2fr 0.1fr 1fr 1fr 0.7fr 1fr 1fr 0.2fr;
@@ -27,7 +39,7 @@ const CardStyle = css`
     width: 400px;
     // width: 500px;
     // background-color: rgb(77, 77, 77);
-    background-color: #8e94f2;
+    background-color: #8b5e34;
     // background-color: gray;
     // background-color: rgb(15, 1, 75); blue option
     border-radius: 10%;
@@ -39,7 +51,7 @@ const CardStyle = css`
   :hover {
     // background-color: rgb(26, 2, 131);  light up blue
     // background-color: rgb(110, 110, 110);
-    background-color: #bbadff;
+    background-color: #E7BC91;
     box-shadow: 0 9px 30px rgba(255, 255, 255, 0.7);
   }
 `;
@@ -76,7 +88,7 @@ export const ProjectsTxt = styled.div`
    {
     grid-area: 5 / 6 / 6 / 7;
     // background-color: blue;
-    color: white;
+    color: black;
     text-align: center;
     font-size: 2cm;
     font-weight: bolder;
@@ -115,7 +127,7 @@ export const Bio = styled.div`
     width: 140%;
     height: 100%;
     margin: 20px;
-    color: white;
+    color: black;
   }
   :after {
     display: block;

@@ -18,7 +18,8 @@ export const PGContainer = styled.div`
   margin-bottom: 10%;
   // background-color: rgb(42, 53, 100);
 
-  background-color: rgb(15, 1, 75);
+  // background-color: rgb(15, 1, 75);
+  background-color: #240046;
 
   border-radius: 2%;
   //   display: grid;
