@@ -151,7 +151,7 @@ export const Bio = styled.div`
     width: 20%;
     height: 20%;
     position: absolute;
-    bottom: -2%;
+    bottom: 12%;
     right: -5%;
 
     border-bottom: 5px solid white;
