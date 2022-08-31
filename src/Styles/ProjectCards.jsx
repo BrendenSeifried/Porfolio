@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 // import appImg from `../assets/${tag}`
-// import test from '../assets/FMMpic.PNG';
+import test from '../assets/FMMpic.png';
+// import bg from '../assets/bg2.png';
 
 export const CardContainer = styled.div`
 
 height: 95vh;
 margin-bottom: 10%;
   // background-color: rgb(42, 53, 100);
-   background-color: rgb(15, 1, 75);
+  //  background-color: rgb(15, 1, 75);
+  // background-color: #240046;
+  background-color: #8b5e34;
+
 
   border-radius: 2%;
   display: grid;
@@ -96,15 +100,21 @@ margin-bottom: 10%;
     text-decoration: underline;
   }
   h3 {
+    // border-top: 8px double white;
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    // font-size: 1.2cm;
+    font-size: 0.8cm;
     // width: 90%;
-    left: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    // right 15%;
   }
   a {
     color: inherit;
-    margin: 80px;
+    // margin-left: 80px;
+    margin-bottom: 200px;
+    // margin-bottom: 90px;
   }
 
  a:hover,
@@ -116,6 +126,17 @@ margin-bottom: 10%;
   a:visited {    
     text-decoration: none; 
     color: inherit;
+    }
+
+    image{
+      // border: 5px solid black;
+      // height 300px;
+  background-image: url(${test});
+  // height 300%:
+  // background-size:     cover;                    
+  //   background-repeat:   no-repeat;
+  //   background-position: center center;   
+
     }
 
 button {

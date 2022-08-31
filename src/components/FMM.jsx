@@ -1,8 +1,10 @@
 import React from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa';
-// import { CardContainer } from '../Styles/ProjectCards';
+import { CardContainer } from '../Styles/ProjectCards';
 import { GiMagicShield } from 'react-icons/gi';
 // import fmmimg from '../assets/FMMpic.PNG';
+import fmmpic from '../assets/FMMpic.png';
+
 import { usePageContext } from '../context/Pages';
 import {
   PGContainer,
@@ -17,14 +19,17 @@ export default function FMM() {
     // <CardContainer>
     //   <h2>Full-Metal-Messenger</h2>
 
-    //   <h1>
-    //     <GiMagicShield size={250} />
-    //   </h1>
-
+    //   {/* <img>
+    //     <GiMagicShield size={350} />
+    //   </img> */}
+    //   <image/>
     //   <h3>
-    //     A real time messaging app. This App allows users to create private chat
-    //     rooms once signed up. Utilizes Charka-Ui for design and SupaBase for
-    //     functionality, created in React.
+    //     FMM is a real time messaging app. This App allows users with a valid
+    //     account to enter a main lobby live chat. Users can create a private room
+    //     and add other users to it via a side drawer showing all other accounts.
+    //     This project was with a three person team during a week long sprint. FMM
+    //     utilizes Charka-Ui for styling and SupaBase for functionality, created
+    //     in React.
     //   </h3>
     //   <p>
     //     <a href={'https://github.com/Full-Metal-Messenger/FMMessenger'}>
@@ -41,17 +46,18 @@ export default function FMM() {
       <ProjectName>Full-Metal-Messenger</ProjectName>
 
       <Photo>
-        {/* <img src={''} /> */}
-        {/* <GiMagicShield size={250} />
-        //  */}
-        <img src={'../assets/FMMpic.PNG'}></img>
-        test
+        <img src={fmmpic} />
       </Photo>
+      {/* <GiMagicShield size={250} /> */}
+      {/* </Photo> */}
       <Description>
         <h3>
-          A real time messaging app. This App allows users to create private
-          chat rooms once signed up. Utilizes Charka-Ui for design and SupaBase
-          for functionality, created in React.
+          FMM is a real time messaging app. This App allows users with a valid
+          account to enter a main lobby live chat. Users can create a private
+          room and add other users to it via a side drawer showing all other
+          accounts. This project was with a three person team during a week long
+          sprint. FMM utilizes Charka-Ui for styling and SupaBase for
+          functionality, created in React.
         </h3>
         <p>
           <a href={'https://github.com/Full-Metal-Messenger/FMMessenger'}>

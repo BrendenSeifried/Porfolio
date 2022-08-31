@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-// import fmmimg from '../assets/FMMpic.PNG';
+import fmmpic from '../assets/FMMpic.png';
 
 export const PGContainer = styled.div`
   display: grid;
@@ -16,13 +16,10 @@ export const PGContainer = styled.div`
 
   height: 95vh;
   margin-bottom: 10%;
-  // background-color: rgb(42, 53, 100);
 
-  // background-color: rgb(15, 1, 75);
-  background-color: #240046;
+  background-color: #8b5e34;
 
   border-radius: 2%;
-  //   display: grid;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -94,15 +91,27 @@ export const PGContainer = styled.div`
 export const Photo = styled.div`
   grid-area: Photo;
   border: 5px solid black;
-  // background-image: url('../assets/FMMpic.PNG');
+  // // background-image: url('../assets/FMMpic.PNG');
 
-  //   background-color: white;
-  //   width: 500px;
+  // //   background-color: white;
+  // //   width: 500px;
   img {
-    margin-top: 50px;
-    width: 200px;
-    height: 200px;
-    z-index: 0;
+    //  margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    //   z-index: 0;
+    // background-image: url(${fmmpic});
+
+    //  display: block;
+    // width: 100vw;
+    // height: 100vh;
+    // object-fit: cover;
+    // object-fit: scale-down;
+    // object-fit: contain;
+    // background-size:  contain;
+    // background-size: contain;
+    //   background-repeat:   no-repeat;
+    //   background-position: center center;
   }
 `;
 

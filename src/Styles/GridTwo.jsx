@@ -1,5 +1,5 @@
 // import styled from 'styled-components';
-import bg from '../assets/bg2.png';
+// import bg from '../assets/bg2.png';
 import styled, { css } from 'styled-components';
 
 export const BgBorder = styled.div`
@@ -39,7 +39,9 @@ const CardStyle = css`
     width: 400px;
     // width: 500px;
     // background-color: rgb(77, 77, 77);
-    background-color: #8b5e34;
+    // background-color: #8b5e34;
+  background-color: #8b5e34;
+
     // background-color: gray;
     // background-color: rgb(15, 1, 75); blue option
     border-radius: 10%;
