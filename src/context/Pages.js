@@ -11,9 +11,14 @@ const PageProvider = ({ children }) => {
   const [opened, setOpened] = useState(false);
 
 const closeClickHandler = () => {
-   setExpandOne(!expandOne)  
+   setExpandOne(true);
+    setExpandTwo(true);
+    setExpandThree(true);
+    setExpandFour(true);
+
+
     setBlur(true); 
-    setOpened(!opened);
+    setOpened(false);
 
 }
 
@@ -23,22 +28,28 @@ const closeClickHandler = () => {
      {opened ? '' :
     setExpandOne(!expandOne)  
     setBlur(!blur); }
-    setOpened(!opened);
+    setOpened(false);
   }
   
     const projectTwoClickHandler = () => {
-    setExpandTwo(!expandTwo);
-    setBlur(!blur);
+   {opened ? '' :
+    setExpandTwo(!expandTwo)  
+    setBlur(!blur); }
+    setOpened(false);
   }
 
   const ProjectThreeClickHandler = () => {
-    setExpandThree(!expandThree);
-    setBlur(!blur);
+  {opened ? '' :
+    setExpandThree(!expandThree)  
+    setBlur(!blur); }
+    setOpened(false);
   }
 
    const ProjectFourClickHandler = () => {
-    setExpandFour(!expandFour);
-    setBlur(!blur);
+ {opened ? '' :
+    setExpandFour(!expandFour)  
+    setBlur(!blur); }
+    setOpened(false);;
   }
  
  
