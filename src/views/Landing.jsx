@@ -36,6 +36,7 @@ export default function Landing() {
     projectTwoClickHandler,
     ProjectThreeClickHandler,
     ProjectFourClickHandler,
+    closePageClickHandler,
   } = usePageContext();
 
   return (
@@ -75,7 +76,7 @@ export default function Landing() {
               <h3>React | SupaBase | Chakra-UI | Netlify </h3>
             </CollapsedCards>
           ) : (
-            <FMM />
+            <FMM onClick={closePageClickHandler} />
           )}
         </CardOne>
 

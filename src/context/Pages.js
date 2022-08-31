@@ -3,20 +3,34 @@ import { createContext, useContext, useState, useEffect } from 'react';
 export const PageContext = createContext();
 
 const PageProvider = ({ children }) => {
-     const [expandOne, setExpandOne] = useState(true);
+  const [expandOne, setExpandOne] = useState(true);
   const [expandTwo, setExpandTwo] = useState(true);
   const [expandThree, setExpandThree] = useState(true);
   const [expandFour, setExpandFour] = useState(true);
   const [blur, setBlur] = useState(false);
+  const [opened, setOpened] = useState(false);
+
+const closeClickHandler = () => {
+   setExpandOne(!expandOne)  
+    setBlur(true); 
+    setOpened(!opened);
+
+}
+
+
 
   const projectOneClickHandler = () => {
-    setExpandOne(!expandOne);
-    setBlur(!blur);
+     {opened ? '' :
+    setExpandOne(!expandOne)  
+    setBlur(!blur); }
+    setOpened(!opened);
   }
+  
     const projectTwoClickHandler = () => {
     setExpandTwo(!expandTwo);
     setBlur(!blur);
   }
+
   const ProjectThreeClickHandler = () => {
     setExpandThree(!expandThree);
     setBlur(!blur);
@@ -32,7 +46,7 @@ const PageProvider = ({ children }) => {
     <PageContext.Provider
       value={{
         blur, setBlur,
- expandOne, projectOneClickHandler, expandTwo, setExpandTwo,projectTwoClickHandler, expandThree, ProjectThreeClickHandler, ProjectFourClickHandler, expandFour
+ expandOne, projectOneClickHandler, expandTwo, setExpandTwo,projectTwoClickHandler, expandThree, ProjectThreeClickHandler, ProjectFourClickHandler, expandFour, closeClickHandler
       }}
     >
       {children}

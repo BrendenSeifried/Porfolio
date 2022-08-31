@@ -14,7 +14,7 @@ import {
 } from '../Styles/ProjectGrid';
 
 export default function FMM() {
-  const { projectOneClickHandler } = usePageContext();
+  const { projectOneClickHandler, closeClickHandler } = usePageContext();
   return (
     // <CardContainer>
     //   <h2>Full-Metal-Messenger</h2>
@@ -68,7 +68,7 @@ export default function FMM() {
           </a>
         </p>
       </Description>
-      <button onClick={projectOneClickHandler}>Close</button>
+      <button onClick={closeClickHandler}>Close</button>
     </PGContainer>
   );
 }
