@@ -62,6 +62,7 @@ export default function Landing() {
         {/* <ProjectsTxt>Projects</ProjectsTxt> */}
 
         <Bio>
+          {blur && <WholeSpace />}
           <About />
         </Bio>
 
