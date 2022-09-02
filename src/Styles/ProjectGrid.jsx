@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import fmmpic from '../assets/FMMpic.png';
 
 export const PGContainer = styled.div`
+  z-index: 2;
   display: grid;
   grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
   grid-template-rows: 0.1fr 1fr 1fr 1fr 0.1fr;

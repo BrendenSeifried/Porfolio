@@ -35,7 +35,7 @@ export const GridContainer = styled.div`
 `;
 
 const CardStyle = css`
-z-index: 2;
+// z-index: 2;
     height: 300px;
     width: 400px;
     // width: 500px;
