@@ -3,6 +3,7 @@ import { BsShopWindow } from 'react-icons/bs';
 import { usePageContext } from '../context/Pages';
 import { CardContainer } from '../Styles/ProjectCards';
 import { FaGithub, FaLink } from 'react-icons/fa';
+import { RiPictureInPictureExitFill } from 'react-icons/ri';
 import {
   PGContainer,
   Photo,
@@ -17,7 +18,6 @@ export default function MarkIt() {
   return (
     <PGContainer>
       <ProjectName>Mark-It</ProjectName>
-
       <Photo>
         <img src={fmmpic} />
       </Photo>
@@ -30,18 +30,24 @@ export default function MarkIt() {
         </h3>
         <p>
           <a href={'https://github.com/Mark-it-Team/markit-team-project'}>
-            <FaGithub size={200} />
+            <FaGithub size={100} />
           </a>
           <a
             href={
               'https://deploy-preview-123--wizardly-johnson-11e23c.netlify.app'
             }
           >
-            <FaLink size={200} />
+            <FaLink size={100} />
           </a>
         </p>
       </Description>
-      <button onClick={ProjectThreeClickHandler}>GoBack</button>
+      {/* <button onClick={ProjectThreeClickHandler}> */}
+      <RiPictureInPictureExitFill
+        onClick={ProjectThreeClickHandler}
+        size={50}
+      />
+
+      {/* </button> */}
     </PGContainer>
   );
 }

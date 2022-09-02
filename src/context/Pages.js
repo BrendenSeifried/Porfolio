@@ -8,20 +8,6 @@ const PageProvider = ({ children }) => {
   const [expandThree, setExpandThree] = useState(true);
   const [expandFour, setExpandFour] = useState(true);
   const [blur, setBlur] = useState(false);
-  // const [opened, setOpened] = useState(false);
-
-// const closeClickHandler = () => {
-//    setExpandOne(true);
-//     setExpandTwo(true);
-//     setExpandThree(true);
-//     setExpandFour(true);
-
-
-//     setBlur(true); 
-//     setOpened(false);
-
-// }
-
 
 
   const projectOneClickHandler = () => {

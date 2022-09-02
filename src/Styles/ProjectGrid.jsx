@@ -130,4 +130,23 @@ export const ProjectName = styled.div`
 
 export const Description = styled.div`
   grid-area: Description;
+  p {
+    border-top: 5px solid black;
+    padding-top: 5%;
+  }
+  a {
+    color: inherit;
+    margin: 5%;
+  }
+
+  a:hover,
+  a:focus {
+    opacity: 0.75;
+    color: inherit;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
 `;

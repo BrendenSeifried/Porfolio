@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa';
 import { usePageContext } from '../context/Pages';
-import { FaParking } from 'react-icons/fa';
+import foragepic from '../assets/Foragepic.png';
+import { RiPictureInPictureExitFill } from 'react-icons/ri';
 
 import {
   PGContainer,
@@ -18,7 +19,7 @@ export default function Forage() {
       <ProjectName>Forage Parking App</ProjectName>
 
       <Photo>
-        <FaParking size={400} />
+        <img src={foragepic} />
       </Photo>
       <Description>
         <h3>
@@ -27,14 +28,14 @@ export default function Forage() {
         </h3>
         <p>
           <a href={'https://github.com/Forage-Parking/Forage-Parking-App'}>
-            <FaGithub size={200} />
+            <FaGithub size={100} />
           </a>
           <a href={'https://forage-parking.netlify.app/auth'}>
-            <FaLink size={200} />
+            <FaLink size={100} />
           </a>
         </p>
       </Description>
-      <button onClick={projectTwoClickHandler}>GoBack</button>
+      <RiPictureInPictureExitFill onClick={projectTwoClickHandler} size={50} />
     </PGContainer>
   );
 }

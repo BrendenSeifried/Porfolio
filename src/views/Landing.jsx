@@ -36,7 +36,6 @@ export default function Landing() {
     projectTwoClickHandler,
     ProjectThreeClickHandler,
     ProjectFourClickHandler,
-    closePageClickHandler,
   } = usePageContext();
 
   return (
@@ -139,7 +138,7 @@ export default function Landing() {
               <h2>
                 <BsShopWindow size={150} />
               </h2>
-              <h3>React | SupaBase | Netlify </h3>
+              <h3>React | SupaBase | MapBox | Netlify </h3>
             </CollapsedCards>
           ) : (
             <MarkIt />

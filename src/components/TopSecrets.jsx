@@ -1,6 +1,8 @@
 import React from 'react';
 import { CardContainer } from '../Styles/ProjectCards';
 import { FaUserSecret, FaGithub } from 'react-icons/fa';
+import { RiPictureInPictureExitFill } from 'react-icons/ri';
+
 import { usePageContext } from '../context/Pages';
 import {
   PGContainer,
@@ -29,11 +31,11 @@ export default function TopSecrets() {
         </h3>
         <p>
           <a href={'https://github.com/BrendenSeifried/top-secrets'}>
-            <FaGithub size={200} />
+            <FaGithub size={100} />
           </a>
         </p>
       </Description>
-      <button onClick={ProjectFourClickHandler}>close</button>
+      <RiPictureInPictureExitFill onClick={ProjectFourClickHandler} size={50} />
     </PGContainer>
   );
 }
