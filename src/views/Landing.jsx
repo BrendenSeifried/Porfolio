@@ -3,6 +3,7 @@ import About from '../components/About';
 import FMM from '../components/FMM';
 import Forage from '../components/Forage';
 import { CollapsedCards } from '../Styles/CollapsedCards';
+import img from '../assets/resume.png';
 
 import {
   GridContainer,
@@ -24,6 +25,8 @@ import { usePageContext } from '../context/Pages';
 import MarkIt from '../components/MarkIt';
 import TopSecrets from '../components/TopSecrets';
 import Resume from '../components/Resume';
+import { ResumeContainer } from '../Styles/Resume';
+import { GrDocumentText } from 'react-icons/gr';
 
 export default function Landing() {
   const {
@@ -45,7 +48,7 @@ export default function Landing() {
         {/* <Welcome>Welcome</Welcome> */}
         {/* <Links></Links> */}
         <ContactResume>
-          <img src="https://imgur.com/a/NFwiwcw" alt="image" />
+          {/* <img src="https://imgur.com/a/NFwiwcw" alt="image" /> */}
           {/* "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -55,26 +58,20 @@ export default function Landing() {
           culpa qui officia deserunt mollit anim id est laborum."
            */}
 
-          <Resume />
+          {/* <Resume /> */}
+          <ResumeContainer>
+            <h1>My Resume.</h1>
+            {/* <img src={img} /> */}
+            <GrDocumentText size={400} />
+
+            {/* <img src={img} height={100} width={100} alt="image" /> */}
+          </ResumeContainer>
         </ContactResume>
         {/* <ProjectsTxt>Projects</ProjectsTxt> */}
         <Bio>
           <About />
         </Bio>
-        {/* <CardOne onClick={projectOneClickHandler}>
-          {expandOne ? (
-            <CollapsedCards>
-              <h1>Full-Metal-Messenger</h1>
-              {''}
-              <h2>
-                <GiMagicShield size={150} />
-              </h2>
-              <h3>React | SupaBase | Chakra-UI | Netlify </h3>
-            </CollapsedCards>
-          ) : (
-            <FMM onClick={closePageClickHandler} />
-          )}
-        </CardOne> */}
+
         <CardOne>
           {expandOne ? (
             <CollapsedCards onClick={projectOneClickHandler}>
@@ -89,20 +86,7 @@ export default function Landing() {
             <FMM />
           )}
         </CardOne>
-        {/* <CardTwo onClick={projectTwoClickHandler}>
-          {expandTwo ? (
-            <CollapsedCards>
-              <h1>Forage Parking App</h1>
-              {''}
-              <h2>
-                <FaParking size={150} />
-              </h2>
-              <h3>React | SupaBase | Netlify </h3>
-            </CollapsedCards>
-          ) : (
-            <Forage />
-          )}
-        </CardTwo> */}
+
         <CardTwo>
           {expandTwo ? (
             <CollapsedCards onClick={projectTwoClickHandler}>
@@ -116,20 +100,6 @@ export default function Landing() {
             <Forage />
           )}
         </CardTwo>
-        {/* <CardThree onClick={ProjectThreeClickHandler}>
-          {expandThree ? (
-            <CollapsedCards>
-              <h1>Mark-It</h1>
-              {''}
-              <h2>
-                <BsShopWindow size={150} />
-              </h2>
-              <h3>React | SupaBase | MapBox | Netlify </h3>
-            </CollapsedCards>
-          ) : (
-            <MarkIt />
-          )}
-        </CardThree> */}
 
         <CardThree>
           {expandThree ? (
@@ -144,21 +114,6 @@ export default function Landing() {
             <MarkIt />
           )}
         </CardThree>
-        {/* 
-        <CardFour onClick={ProjectFourClickHandler}>
-          {expandFour ? (
-            <CollapsedCards>
-              <h1>Top-Secrets</h1>
-              {''}
-              <h2>
-                <FaUserSecret size={150} />
-              </h2>
-              <h3>React | SQL | Heroku | Unit Testing</h3>
-            </CollapsedCards>
-          ) : (
-            <TopSecrets />
-          )}
-        </CardFour> */}
 
         <CardFour>
           {expandFour ? (

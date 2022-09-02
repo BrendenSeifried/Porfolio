@@ -92,27 +92,10 @@ export const PGContainer = styled.div`
 export const Photo = styled.div`
   grid-area: Photo;
   border: 5px solid black;
-  // // background-image: url('../assets/FMMpic.PNG');
 
-  // //   background-color: white;
-  // //   width: 500px;
   img {
-    //  margin-top: 50px;
     width: 100%;
     height: 100%;
-    //   z-index: 0;
-    // background-image: url(${fmmpic});
-
-    //  display: block;
-    // width: 100vw;
-    // height: 100vh;
-    // object-fit: cover;
-    // object-fit: scale-down;
-    // object-fit: contain;
-    // background-size:  contain;
-    // background-size: contain;
-    //   background-repeat:   no-repeat;
-    //   background-position: center center;
   }
 `;
 
