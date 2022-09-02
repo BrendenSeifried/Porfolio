@@ -68,7 +68,7 @@ export default function FMM() {
           </a>
         </p>
       </Description>
-      <button onClick={closeClickHandler}>Close</button>
+      <button onClick={projectOneClickHandler}>Close</button>
     </PGContainer>
   );
 }

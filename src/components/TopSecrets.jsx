@@ -2,15 +2,20 @@ import React from 'react';
 import { CardContainer } from '../Styles/ProjectCards';
 import { FaUserSecret, FaGithub } from 'react-icons/fa';
 import { usePageContext } from '../context/Pages';
-import { Description, PGContainer, Photo } from '../Styles/ProjectGrid';
+import {
+  PGContainer,
+  Photo,
+  ProjectName,
+  Description,
+} from '../Styles/ProjectGrid';
 import fmmpic from '../assets/FMMpic.png';
 
 export default function TopSecrets() {
-  const { closeClickHandler } = usePageContext();
+  const { ProjectFourClickHandler } = usePageContext();
 
   return (
     <PGContainer>
-      <h2>Mark-It</h2>
+      <ProjectName>Mark-It</ProjectName>
 
       <Photo>
         <img src={fmmpic} />
@@ -28,7 +33,7 @@ export default function TopSecrets() {
           </a>
         </p>
       </Description>
-      <button onClick={closeClickHandler}>close</button>
+      <button onClick={ProjectFourClickHandler}>close</button>
     </PGContainer>
   );
 }

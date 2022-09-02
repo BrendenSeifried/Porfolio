@@ -3,15 +3,20 @@ import { BsShopWindow } from 'react-icons/bs';
 import { usePageContext } from '../context/Pages';
 import { CardContainer } from '../Styles/ProjectCards';
 import { FaGithub, FaLink } from 'react-icons/fa';
-import { Description, PGContainer, Photo } from '../Styles/ProjectGrid';
+import {
+  PGContainer,
+  Photo,
+  ProjectName,
+  Description,
+} from '../Styles/ProjectGrid';
 import fmmpic from '../assets/FMMpic.png';
 
 export default function MarkIt() {
-  const { closeClickHandler } = usePageContext();
+  const { ProjectThreeClickHandler } = usePageContext();
 
   return (
     <PGContainer>
-      <h2>Mark-It</h2>
+      <ProjectName>Mark-It</ProjectName>
 
       <Photo>
         <img src={fmmpic} />
@@ -36,7 +41,7 @@ export default function MarkIt() {
           </a>
         </p>
       </Description>
-      <button onClick={closeClickHandler}>GoBack</button>
+      <button onClick={ProjectThreeClickHandler}>GoBack</button>
     </PGContainer>
   );
 }

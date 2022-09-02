@@ -58,15 +58,11 @@ export default function Landing() {
 
           <Resume />
         </ContactResume>
-
         {/* <ProjectsTxt>Projects</ProjectsTxt> */}
-
         <Bio>
-          {blur && <WholeSpace />}
           <About />
         </Bio>
-
-        <CardOne onClick={projectOneClickHandler}>
+        {/* <CardOne onClick={projectOneClickHandler}>
           {expandOne ? (
             <CollapsedCards>
               <h1>Full-Metal-Messenger</h1>
@@ -79,9 +75,22 @@ export default function Landing() {
           ) : (
             <FMM onClick={closePageClickHandler} />
           )}
+        </CardOne> */}
+        <CardOne>
+          {expandOne ? (
+            <CollapsedCards onClick={projectOneClickHandler}>
+              <h1>Full-Metal-Messenger</h1>
+              {''}
+              <h2>
+                <GiMagicShield size={150} />
+              </h2>
+              <h3>React | SupaBase | Chakra-UI | Netlify </h3>
+            </CollapsedCards>
+          ) : (
+            <FMM />
+          )}
         </CardOne>
-
-        <CardTwo onClick={projectTwoClickHandler}>
+        {/* <CardTwo onClick={projectTwoClickHandler}>
           {expandTwo ? (
             <CollapsedCards>
               <h1>Forage Parking App</h1>
@@ -94,9 +103,21 @@ export default function Landing() {
           ) : (
             <Forage />
           )}
+        </CardTwo> */}
+        <CardTwo>
+          {expandTwo ? (
+            <CollapsedCards onClick={projectTwoClickHandler}>
+              <h1>Forage Parking App</h1>
+              <h2>
+                <FaParking size={150} />
+              </h2>
+              <h3>React | SupaBase | Netlify </h3>
+            </CollapsedCards>
+          ) : (
+            <Forage />
+          )}
         </CardTwo>
-
-        <CardThree onClick={ProjectThreeClickHandler}>
+        {/* <CardThree onClick={ProjectThreeClickHandler}>
           {expandThree ? (
             <CollapsedCards>
               <h1>Mark-It</h1>
@@ -109,13 +130,41 @@ export default function Landing() {
           ) : (
             <MarkIt />
           )}
-        </CardThree>
+        </CardThree> */}
 
+        <CardThree>
+          {expandThree ? (
+            <CollapsedCards onClick={ProjectThreeClickHandler}>
+              <h1>Mark-It</h1>
+              <h2>
+                <BsShopWindow size={150} />
+              </h2>
+              <h3>React | SupaBase | Netlify </h3>
+            </CollapsedCards>
+          ) : (
+            <MarkIt />
+          )}
+        </CardThree>
+        {/* 
         <CardFour onClick={ProjectFourClickHandler}>
           {expandFour ? (
             <CollapsedCards>
               <h1>Top-Secrets</h1>
               {''}
+              <h2>
+                <FaUserSecret size={150} />
+              </h2>
+              <h3>React | SQL | Heroku | Unit Testing</h3>
+            </CollapsedCards>
+          ) : (
+            <TopSecrets />
+          )}
+        </CardFour> */}
+
+        <CardFour>
+          {expandFour ? (
+            <CollapsedCards onClick={ProjectFourClickHandler}>
+              <h1>Top-Secrets</h1>
               <h2>
                 <FaUserSecret size={150} />
               </h2>

@@ -8,48 +8,44 @@ const PageProvider = ({ children }) => {
   const [expandThree, setExpandThree] = useState(true);
   const [expandFour, setExpandFour] = useState(true);
   const [blur, setBlur] = useState(false);
-  const [opened, setOpened] = useState(false);
+  // const [opened, setOpened] = useState(false);
 
-const closeClickHandler = () => {
-   setExpandOne(true);
-    setExpandTwo(true);
-    setExpandThree(true);
-    setExpandFour(true);
+// const closeClickHandler = () => {
+//    setExpandOne(true);
+//     setExpandTwo(true);
+//     setExpandThree(true);
+//     setExpandFour(true);
 
 
-    setBlur(true); 
-    setOpened(false);
+//     setBlur(true); 
+//     setOpened(false);
 
-}
+// }
 
 
 
   const projectOneClickHandler = () => {
-     {opened ? '' :
     setExpandOne(!expandOne)  
-    setBlur(!blur); }
-    setOpened(false);
+    setBlur(!blur); 
+    // setOpened(false);
   }
   
     const projectTwoClickHandler = () => {
-   {opened ? '' :
     setExpandTwo(!expandTwo)  
-    setBlur(!blur); }
-    setOpened(false);
+    setBlur(!blur); 
+    // setOpened(false);
   }
 
   const ProjectThreeClickHandler = () => {
-  {opened ? '' :
     setExpandThree(!expandThree)  
-    setBlur(!blur); }
-    setOpened(false);
+    setBlur(!blur); 
+    // setOpened(false);
   }
 
    const ProjectFourClickHandler = () => {
- {opened ? '' :
     setExpandFour(!expandFour)  
-    setBlur(!blur); }
-    setOpened(false);;
+    setBlur(!blur); 
+    // setOpened(false);
   }
  
  
@@ -57,7 +53,7 @@ const closeClickHandler = () => {
     <PageContext.Provider
       value={{
         blur, setBlur,
- expandOne, projectOneClickHandler, expandTwo, setExpandTwo,projectTwoClickHandler, expandThree, ProjectThreeClickHandler, ProjectFourClickHandler, expandFour, closeClickHandler
+ expandOne, projectOneClickHandler, expandTwo, setExpandTwo,projectTwoClickHandler, expandThree, ProjectThreeClickHandler, ProjectFourClickHandler, expandFour
       }}
     >
       {children}
