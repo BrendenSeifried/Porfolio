@@ -9,6 +9,7 @@ import {
   Photo,
   ProjectName,
   Description,
+  ProjectLinks,
 } from '../Styles/ProjectGrid';
 import fmmpic from '../assets/FMMpic.png';
 
@@ -29,12 +30,15 @@ export default function TopSecrets() {
           privileges to access all secrets. Utilizes Cookies, Tests, and JWT
           secrets.
         </h3>
+      </Description>
+      <ProjectLinks>
         <p>
+          React | SQL | Heroku | Unit Testing
           <a href={'https://github.com/BrendenSeifried/top-secrets'}>
-            <FaGithub size={100} />
+            <FaGithub size={80} />
           </a>
         </p>
-      </Description>
+      </ProjectLinks>
       <RiPictureInPictureExitFill onClick={ProjectFourClickHandler} size={50} />
     </PGContainer>
   );
