@@ -12,6 +12,7 @@ import {
   Photo,
   ProjectName,
   Description,
+  ProjectLinks,
 } from '../Styles/ProjectGrid';
 
 export default function FMM() {
@@ -34,15 +35,27 @@ export default function FMM() {
           sprint. FMM utilizes Charka-Ui for styling and SupaBase for
           functionality, created in React.
         </h3>
-        <p>
+        {/* <p>
           <a href={'https://github.com/Full-Metal-Messenger/FMMessenger'}>
             <FaGithub size={100} />
           </a>
           <a href={'https://fm-messenger.netlify.app/auth'}>
             <FaLink size={100} />
           </a>
-        </p>
+        </p> */}
       </Description>
+      <ProjectLinks>
+        <p>
+          <a href={''}>React | SupaBase | Chakra-UI | Netlify</a>
+
+          <a href={'https://github.com/Full-Metal-Messenger/FMMessenger'}>
+            <FaGithub size={80} />
+          </a>
+          <a href={'https://fm-messenger.netlify.app/auth'}>
+            <FaLink size={80} />
+          </a>
+        </p>
+      </ProjectLinks>
       {/* <button onClick={projectOneClickHandler}>Close</button> */}
       <RiPictureInPictureExitFill onClick={projectOneClickHandler} size={50} />
     </PGContainer>

@@ -23,8 +23,10 @@ export default function Forage() {
       </Photo>
       <Description>
         <h3>
-          A mobile app for renting and leasing personal parking spaces. Utilizes
-          MapBox to show a map of spaces. User can Both upload and find spots.
+          A mobile parking app. It allows renting and leasing personal parking
+          spaces. There is a usable map showing locations. Prices size and
+          location can all be set by vendors. This project was created in React
+          using Supabase and mapbox.
         </h3>
         <p>
           <a href={'https://github.com/Forage-Parking/Forage-Parking-App'}>

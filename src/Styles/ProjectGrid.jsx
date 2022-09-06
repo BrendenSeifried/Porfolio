@@ -3,19 +3,35 @@ import fmmpic from '../assets/FMMpic.png';
 
 export const PGContainer = styled.div`
   z-index: 2;
-  display: grid;
-  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
-  grid-template-rows: 0.1fr 1fr 1fr 1fr 0.1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    '. . . . . .'
-    '. ProjectName ProjectName Photo Photo .'
-    '. Description Description Photo Photo .'
-    '. Description Description Photo Photo .'
-    '. . . . . .';
 
-  height: 95vh;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 0.1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    '. . . . . . . . .'
+    '. ProjectName ProjectName ProjectName ProjectLinks ProjectLinks ProjectLinks ProjectLinks .'
+    '. . . . Photo Photo Photo Photo .'
+    '. Description Description Description Photo Photo Photo Photo .'
+    '. Description Description Description Photo Photo Photo Photo .'
+    '. Description Description Description Photo Photo Photo Photo .'
+    '. . . . . . . . .';
+
+  //////////////OLD////////////
+  // display: grid;
+  // grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+  // grid-template-rows: 0.1fr 1fr 1fr 1fr 0.1fr;
+  // gap: 0px 0px;
+  // grid-auto-flow: row;
+  // grid-template-areas:
+  //   '. . . . . .'
+  //   '. ProjectName ProjectName Photo Photo .'
+  //   '. Description Description Photo Photo .'
+  //   '. Description Description Photo Photo .'
+  //   '. . . . . .';
+  ////////////////OLD/////////////////////
+  height: 85vh;
+  width: 70%;
   margin-bottom: 10%;
 
   background-color: #8b5e34;
@@ -29,7 +45,7 @@ export const PGContainer = styled.div`
   border: 10px double black;
   opacity: 0.97;
   position: fixed;
-  top: 2%;
+  top: 8%;
   left: 12%;
   bottom: 7%;
   right: 12%;
@@ -91,7 +107,7 @@ export const PGContainer = styled.div`
 
 export const Photo = styled.div`
   grid-area: Photo;
-  border: 5px solid black;
+  border: 3px solid white;
 
   img {
     width: 100%;
@@ -113,13 +129,57 @@ export const ProjectName = styled.div`
 
 export const Description = styled.div`
   grid-area: Description;
+
   p {
-    border-top: 5px solid black;
+    padding-left: 20%;
+    border-top: 5px double white;
     padding-top: 5%;
   }
   a {
     color: inherit;
     margin: 5%;
+  }
+
+  a:hover,
+  a:focus {
+    opacity: 0.75;
+    color: inherit;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+`;
+
+export const ProjectLinks = styled.div`
+  grid-area: ProjectLinks;
+  // padding: 10px;
+  display: flex;
+  flex-direction: row;
+  overflow: visible;
+
+  p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    // text-indent: 0%;
+
+    // display: flex;
+    // flex-direction: row;
+    padding-left: 20%;
+    border-bottom: 5px double white;
+    padding-bottom: 2%;
+    width: 200%;
+    overflow: visible;
+  }
+  a {
+    color: inherit;
+    margin: 3%;
   }
 
   a:hover,
