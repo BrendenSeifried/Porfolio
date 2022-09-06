@@ -9,6 +9,7 @@ import {
   Photo,
   ProjectName,
   Description,
+  ProjectLinks,
 } from '../Styles/ProjectGrid';
 
 export default function Forage() {
@@ -28,7 +29,10 @@ export default function Forage() {
           location can all be set by vendors. This project was created in React
           using Supabase and mapbox.
         </h3>
+      </Description>
+      <ProjectLinks>
         <p>
+          React | SupaBase | Netlify | MapBox
           <a href={'https://github.com/Forage-Parking/Forage-Parking-App'}>
             <FaGithub size={100} />
           </a>
@@ -36,7 +40,7 @@ export default function Forage() {
             <FaLink size={100} />
           </a>
         </p>
-      </Description>
+      </ProjectLinks>
       <RiPictureInPictureExitFill onClick={projectTwoClickHandler} size={50} />
     </PGContainer>
   );

@@ -94,7 +94,7 @@ export default function Landing() {
               <h2>
                 <FaParking size={150} />
               </h2>
-              <h3>React | SupaBase | Netlify </h3>
+              <h3>React | SupaBase | Netlify |MapBox </h3>
             </CollapsedCards>
           ) : (
             <Forage />
