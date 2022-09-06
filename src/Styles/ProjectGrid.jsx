@@ -117,10 +117,6 @@ export const Photo = styled.div`
 
 export const ProjectName = styled.div`
   grid-area: ProjectName;
-
-  //   display: flex;
-  //   justify-content: left;
-  //   margin: 2% 0 0 8%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1cm;
   font-weight: bolder;
@@ -128,33 +124,39 @@ export const ProjectName = styled.div`
 `;
 
 export const Description = styled.div`
+  margin-right: 8%;
+  padding-top: -25%;
+  height: 90%;
+  radius: 10px;
   grid-area: Description;
+  // background-color: #b17844;
+  // height: 200%;
+  margin-top: -20%;
+  // margin-bottom: 50%;
+  // margin-right: 14.5%;
+  // border: 5px solid black;
 
-  p {
-    padding-left: 20%;
-    border-top: 5px double white;
-    padding-top: 5%;
-  }
-  a {
-    color: inherit;
-    margin: 5%;
-  }
+  h3 {
+    margin-top: 25%;
+    // background-color: #b17844;
+    radius: 5px;
+    box-shadow: 5px 10px rgba(8, 1, 1, 0.616);
+    padding: 2px;
 
-  a:hover,
-  a:focus {
-    opacity: 0.75;
-    color: inherit;
-  }
+    border: 5px solid black;
+    border-radius: 10px;
 
-  a:visited {
-    text-decoration: none;
-    color: inherit;
+    font-size: 1.5rem;
+
+    // margin: 20% 0;
+    // margin-top: 20%;
+    // margin-bottom: 5%;
+    // border: 5px solid black;
   }
 `;
 
 export const ProjectLinks = styled.div`
   grid-area: ProjectLinks;
-  // padding: 10px;
   display: flex;
   flex-direction: row;
   overflow: visible;
@@ -162,15 +164,10 @@ export const ProjectLinks = styled.div`
   p {
     font-size: 1.5rem;
     font-weight: bolder;
-
     clear: both;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    // text-indent: 0%;
-
-    // display: flex;
-    // flex-direction: row;
     padding-left: 20%;
     border-bottom: 5px double white;
     padding-bottom: 2%;
