@@ -9,6 +9,7 @@ import {
   Photo,
   ProjectName,
   Description,
+  ProjectLinks,
 } from '../Styles/ProjectGrid';
 import fmmpic from '../assets/FMMpic.png';
 
@@ -28,25 +29,28 @@ export default function MarkIt() {
           and reserve items of their choosing. Many to many tables created using
           Supabase.
         </h3>
+      </Description>
+
+      <ProjectLinks>
         <p>
+          React | SupaBase | Netlify
           <a href={'https://github.com/Mark-it-Team/markit-team-project'}>
-            <FaGithub size={100} />
+            <FaGithub size={80} />
           </a>
           <a
             href={
               'https://deploy-preview-123--wizardly-johnson-11e23c.netlify.app'
             }
           >
-            <FaLink size={100} />
+            <FaLink size={80} />
           </a>
         </p>
-      </Description>
+      </ProjectLinks>
       {/* <button onClick={ProjectThreeClickHandler}> */}
       <RiPictureInPictureExitFill
         onClick={ProjectThreeClickHandler}
         size={50}
       />
-
       {/* </button> */}
     </PGContainer>
   );

@@ -34,10 +34,10 @@ export default function Forage() {
         <p>
           React | SupaBase | Netlify | MapBox
           <a href={'https://github.com/Forage-Parking/Forage-Parking-App'}>
-            <FaGithub size={100} />
+            <FaGithub size={80} />
           </a>
           <a href={'https://forage-parking.netlify.app/auth'}>
-            <FaLink size={100} />
+            <FaLink size={80} />
           </a>
         </p>
       </ProjectLinks>
